@@ -74,7 +74,7 @@ The site has a whole page dedicated to eBay's iconography and their own icon lib
 
 Unlike craigslist these icons are synonymous to the user have alternative text for screenreaders and are used across ebay apps, sites, pages, and services, and they are considered by ebay to be a **foundation** of their design. These icons and more can be found at [playbook.ebay.com/foundations/iconography/our-icons](https://playbook.ebay.com/foundations/iconography/our-icons)
 
-![eBay Playbook Iconography](5.png)
+![eBay Playbook Iconography](/Screenshots/5.png)
 > **Description:** Screenshot of ebay UK Playbook page on iconography, demonstrating eBay's structured icon library used across their platform for intuitive category navigation.
 
 ### Justification for Development
