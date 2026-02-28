@@ -30,6 +30,7 @@ To acheive this we will break it down into 3 parts: evaluation of business needs
 The current Craigslist interface relies entirely on text-based navigation with no visual hierarchy, icons, or graphical signposting. PhD researcher Nihal Nayak (Harvard University) characterised the site as "out-of-fashion" with a steep learning curve (Nayak, 2019). Because so few modern websites use this style, new users must actively learn the interface rather than applying familiar web conventions — a direct violation of the usability principle of **consistency with external standards** (Nielsen, 1994).
 
 ![Screenshot 1: Homepage layout](/Screenshots/1.png)
+
 > **Description:** Screenshot of london.craigslist.org homepage showing text-only layout, lack of sectional dividers, and absence of visual hierarchy.
 
 #### 1.2 Non-Intuitive Search Functionality
@@ -37,6 +38,7 @@ The current Craigslist interface relies entirely on text-based navigation with n
 The search box is positioned in the top-left corner beneath the page title. While visible, it contains no graphical button or icon to trigger a search. Users must know to press Enter/Return — an interaction pattern largely abandoned by modern web services. Competitor platforms eBay UK and Gumtree both use clearly labelled, graphically styled search buttons that align with established user expectations.
 
 ![Screenshot 2: Search bar comparison](/Screenshots/2.png)
+
 > **Description:** Side-by-side comparison of Craigslist's search bar (no button) vs. eBay UK (prominent search buttons).
 
 #### 1.3 Lack of Mobile Responsiveness
@@ -44,6 +46,7 @@ The search box is positioned in the top-left corner beneath the page title. Whil
 Craigslist does not implement responsive design patterns such as dropdown menus, collapsible navigation, or touch-optimised tap targets. A substantial and growing proportion of web traffic originates from mobile devices, particularly among younger demographics who prefer a mobile-first experience. The absence of responsive design means content overflows on small screens, elements fail to scale correctly even when browser zoom is applied, and touch targets are too small for reliable interaction.
 
 ![Screenshot 3: Mobile viewport](/Screenshots/3.png)
+
 > **Description:** Annotated screenshot of Craigslist rendered on a mobile viewport, illustrating layout overflow and unscaled text elements.
 
 #### 1.4 Poor Accessibility
@@ -54,8 +57,9 @@ The sites semantic landmark region has no deliniation between the topmost row, t
 
 #### 1.5 Competitive Analysis Summary
 
+
 | Feature                    | Craigslist UK | eBay UK | Gumtree |
-| -------------------------- | ------------- | ------- | ------- |
+| ---------------------------- | --------------- | --------- | --------- |
 | Graphical search button    | ✗            | ✓      | ✓      |
 | Category icons             | ✗            | ✓      | ✓      |
 | Mobile responsive layout   | ✗            | ✓      | ✓      |
@@ -64,6 +68,7 @@ The sites semantic landmark region has no deliniation between the topmost row, t
 | Dropdown / hamburger menus | ✗            | ✓      | ✓      |
 
 ![Screenshot 4: Ebay Dynamic Modals](/Screenshots/4.png)
+
 > **Description:** Screenshot of eBay UK homepage showing icons, responsive grid layout, and popup navigation menus.
 
 #### 1.6 Analysis of eBay Iconography
@@ -75,6 +80,7 @@ The site has a whole page dedicated to eBay's iconography and their own icon lib
 Unlike craigslist these icons are synonymous to the user have alternative text for screenreaders and are used across ebay apps, sites, pages, and services, and they are considered by ebay to be a **foundation** of their design. These icons and more can be found at [playbook.ebay.com/foundations/iconography/our-icons](https://playbook.ebay.com/foundations/iconography/our-icons)
 
 ![eBay Playbook Iconography](/Screenshots/5.png)
+
 > **Description:** Screenshot of ebay UK Playbook page on iconography, demonstrating eBay's structured icon library used across their platform for intuitive category navigation.
 
 ### Justification for Development
@@ -104,8 +110,9 @@ Craigslist UK serves a broad community of users across the UK who wish to buy, s
 
 ### Persona 1 — Sarah (First-Time Visitor)
 
+
 | Attribute               | Detail                                                                                                                                   |
-| ----------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
 | **Age**                 | 40                                                                                                                                       |
 | **Occupation**          | Carer                                                                                                                                    |
 | **Location**            | Hertfordshire                                                                                                                            |
@@ -117,11 +124,12 @@ Craigslist UK serves a broad community of users across the UK who wish to buy, s
 
 #### User Stories — Sarah
 
-| #  | User Story                                                                                                                                                                                    |
-| -- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| S1 | As a **first-time visitor**, I want to **search for second-hand furniture using a visible search button**, so that **I can find relevant listings without needing to know keyboard shortcuts**. |
-| S2 | As a **user with dyslexia**, I want the **website to use clear, simple language with generous spacing and readable fonts**, so that **I can browse listings without cognitive overload**.        |
-| S3 | As a **mobile user with hand tremors**, I want **large, clearly labelled buttons and touch targets**, so that **I can navigate the site reliably on my smartphone**.                            |
+
+| #  | User Story                                                                                                                                                                                     |
+| ---- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| S1 | As a**first-time visitor**, I want to **search for second-hand furniture using a visible search button**, so that **I can find relevant listings without needing to know keyboard shortcuts**. |
+| S2 | As a**user with dyslexia**, I want the **website to use clear, simple language with generous spacing and readable fonts**, so that **I can browse listings without cognitive overload**.       |
+| S3 | As a**mobile user with hand tremors**, I want **large, clearly labelled buttons and touch targets**, so that **I can navigate the site reliably on my smartphone**.                            |
 
 #### Tasks — Sarah
 
@@ -149,8 +157,9 @@ Craigslist UK serves a broad community of users across the UK who wish to buy, s
 
 ### Persona 2 — Dexter (Returning Visitor)
 
+
 | Attribute               | Detail                                                                                                                               |
-| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| ------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
 | **Age**                 | 35                                                                                                                                   |
 | **Occupation**          | Graphic Designer                                                                                                                     |
 | **Location**            | London                                                                                                                               |
@@ -162,11 +171,12 @@ Craigslist UK serves a broad community of users across the UK who wish to buy, s
 
 #### User Stories — Dexter
 
-| #  | User Story                                                                                                                                                                                                                           |
-| -- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| D1 | As a **returning visitor**, I want the **website to remember my preferred listing categories**, so that **I can get back to relevant content quickly without re-configuring my search each time**.                                      |
-| D2 | As a **keyboard user**, I want to **navigate the entire site without a mouse**, so that **I can use the platform comfortably despite limited hand dexterity**.                                                                          |
-| D3 | As a **user with deuteranopia**, I want **status indicators and important information to be conveyed through shape or text labels rather than colour alone**, so that **I do not miss critical information due to colour-coded cues**. |
+
+| #  | User Story                                                                                                                                                                                                                            |
+| ---- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| D1 | As a**returning visitor**, I want the **website to remember my preferred listing categories**, so that **I can get back to relevant content quickly without re-configuring my search each time**.                                     |
+| D2 | As a **keyboard user**, I want to **navigate the entire site without a mouse**, so that **I can use the platform comfortably despite limited hand dexterity**.                                                                        |
+| D3 | As a**user with deuteranopia**, I want **status indicators and important information to be conveyed through shape or text labels rather than colour alone**, so that **I do not miss critical information due to colour-coded cues**. |
 
 #### Tasks — Dexter
 
@@ -196,7 +206,7 @@ Craigslist UK serves a broad community of users across the UK who wish to buy, s
 
 
 | Attribute               | Detail                                                                                                                                                                    |
-|-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Age**                 | 22                                                                                                                                                                        |
 | **Occupation**          | Student                                                                                                                                                                   |
 | **Location**            | Hertfordshire                                                                                                                                                             |
@@ -204,15 +214,16 @@ Craigslist UK serves a broad community of users across the UK who wish to buy, s
 | **Tech comfort**        | Comfortable with a range of digital tools; prefers structured interfaces with clear, simple navigation.                                                                   |
 | **Accessibility needs** | ADHD (prefers clear, structured layouts with concise text); visual sensitivity (prefers soft contrast and minimal glare); relies on search filters and saved preferences. |
 
-**Background:** Lana uses Craigslist weekly to search for part-time work and tutoring opportunities. She relies on structured, easy to navigate interfaces. She finds the text-heavy layout of Craigslist challenging to scan a prefers filtering tools to quickly narrow down her results 
+**Background:** Lana uses Craigslist weekly to search for part-time work and tutoring opportunities. She relies on structured, easy to navigate interfaces. She finds the text-heavy layout of Craigslist challenging to scan a prefers filtering tools to quickly narrow down her results
 
 #### User Stories — Lana
 
-| #  | User Story                                                                                                                                                                                   |
-|----|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| S1 | As a **frequent visitor**, I want to **filter my search results by category and location**, so that **I can quickly find relevant listing without being overwhelmed by irrelevant options**. |
-| S2 | As a **user with ADHD**, I want the **website to have clear visual hierarchy and concise descriptions**, so that **I can focus on the most important information without distractions**.     |
-| S3 | As a **user with visual sensitivity**, I want **the website to offer a dark mode or soft contrast option,**, so that **I can browse without experiencing discomfort**.                       |
+
+| #  | User Story                                                                                                                                                                                  |
+| ---- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| S1 | As a**frequent visitor**, I want to **filter my search results by category and location**, so that **I can quickly find relevant listing without being overwhelmed by irrelevant options**. |
+| S2 | As a**user with ADHD**, I want the **website to have clear visual hierarchy and concise descriptions**, so that **I can focus on the most important information without distractions**.     |
+| S3 | As a**user with visual sensitivity**, I want **the website to offer a dark mode or soft contrast option,**, so that **I can browse without experiencing discomfort**.                       |
 
 #### Tasks — Lana
 
@@ -301,11 +312,12 @@ The wireframes will be guided by the following standards and principles:
 
 ## 5. Contributors
 
-| Name        | Email                   |
-| ----------- | ----------------------- |
-| Kai Young   | ky25aaa@herts.ac.uk     |
-| Will Cooper |                         |
-| Daniel      |                         |
+
+| Name        | Email               |
+| ------------- | --------------------- |
+| Kai Young   | ky25aaa@herts.ac.uk |
+| Will Cooper |                     |
+| Daniel      |                     |
 
 > *Update this table with actual emails. All Team Members have to have made commits to the repository*
 
