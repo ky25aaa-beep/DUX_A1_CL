@@ -192,9 +192,48 @@ Craigslist UK serves a broad community of users across the UK who wish to buy, s
 
 ---
 
-### Persona 3 — [Third Persona — To Be Added by Group]
+### Persona 3 - Lana (Frequent Visitor)
 
-> *This section is reserved for the group's third user persona (e.g., a frequent visitor such as a small business owner or community organiser who uses Craigslist regularly). Add background, accessibility considerations, device information, user stories, tasks, and acceptance criteria following the same format as Personas 1 and 2.*
+
+| Attribute               | Detail                                                                                                                                                                    |
+|-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Age**                 | 22                                                                                                                                                                        |
+| **Occupation**          | Student                                                                                                                                                                   |
+| **Location**            | Hertfordshire                                                                                                                                                             |
+| **Devices**             | Android (primary), Windows Desktop                                                                                                                                        |
+| **Tech comfort**        | Comfortable with a range of digital tools; prefers structured interfaces with clear, simple navigation.                                                                   |
+| **Accessibility needs** | ADHD (prefers clear, structured layouts with concise text); visual sensitivity (prefers soft contrast and minimal glare); relies on search filters and saved preferences. |
+
+**Background:** Lana uses Craigslist weekly to search for part-time work and tutoring opportunities. She relies on structured, easy to navigate interfaces. She finds the text-heavy layout of Craigslist challenging to scan a prefers filtering tools to quickly narrow down her results 
+
+#### User Stories — Lana
+
+| #  | User Story                                                                                                                                                                                   |
+|----|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| S1 | As a **frequent visitor**, I want to **filter my search results by category and location**, so that **I can quickly find relevant listing without being overwhelmed by irrelevant options**. |
+| S2 | As a **user with ADHD**, I want the **website to have clear visual hierarchy and concise descriptions**, so that **I can focus on the most important information without distractions**.     |
+| S3 | As a **user with visual sensitivity**, I want **the website to offer a dark mode or soft contrast option,**, so that **I can browse without experiencing discomfort**.                       |
+
+#### Tasks — Lana
+
+* Navigate to the homepage and locate the search bar, ensuring the search button is clearly visible and easy to tap on her smartphone.
+* Enter a search term ("affordable bikes") and initiate the search by tapping the search button (without needing to use the keyboard).
+* Apply filters to refine search results
+* Open a listing and view item details such as price, description, seller information, and images, ensuring the content is well-structured with clear headings and sufficient spacing.
+
+#### Acceptance Criteria — Lana
+
+**S1 – Filtering by category and location:**
+
+> *Given* Lana is on search results page, *when* she applies a filter for location and selects a category, *then* the page should refresh and show listings that match those filters.
+
+**S2 – Structured content and accessibility:**
+
+> *Given* Lana is on a listing page,, *when* she uses a screen reader *then* all listing details must be properly structured with clear and accessible HTML markup, so she can easily access the content.
+
+**S3 – Search results accuracy:**
+
+> *Given* Lana has entered a search term into the search bar, *when* the search results are displayed, *then* the listings shown should match the search term and be sorted by relevance, location adn price.
 
 ---
 
