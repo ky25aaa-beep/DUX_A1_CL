@@ -267,7 +267,7 @@ The wireframes will be guided by the following standards and principles:
 
 ### 3.2 Page / Area 1 — Homepage
 
-> *[Insert wireframe image here]*
+![Homepage Wireframe](/wireframe_images/wireframe_1.png)
 
 **Design Notes:**
 
@@ -278,7 +278,7 @@ The wireframes will be guided by the following standards and principles:
 
 ### 3.3 Page / Area 2 — Search Results Page
 
-> *[Insert wireframe image here]*
+![Search Results Wireframe](/wireframe_images/wireframe_2.png)
 
 **Design Notes:**
 
@@ -296,6 +296,21 @@ The wireframes will be guided by the following standards and principles:
 * Auto-save functionality at defined intervals to prevent data loss for users with slower input speeds.
 * Validation errors displayed as inline text messages with icons, not colour alone.
 * Clear progress indication for multi-step form submission.
+
+---
+### 3.5 Page / Area 4 — Avoiding Scams
+
+![Avoiding Scams Wireframe](/wireframe_images/wireframe_4.png)
+
+**Design Notes:**
+
+* Single-page clarity so all scam-related guidance is presented in one continuous, easy-to-read page without forcing users to navigate away.
+* Actionable steps for each tip, showing what to watch for, how to verify listings, and what to do if something seems suspicious.
+* Readable layout organized with headings, bullet points, and icons for quick scanning and avoiding walls of text.
+* Accessible interactions that are fully keyboard and screen reader friendly, with clearly labeled and focusable warnings and examples.
+* Persistent guidance so important warnings about buyer safety are always shown no matter the reason someone clicked on the page. 
+* Seamless navigation that allows users to leave the page without multiple back clicks while keeping top bar, navbar, and sidebar consistent and functional.
+* Mobile-first design with touch-friendly elements and responsive layout for usability on all screen sizes.
 
 ---
 
