@@ -127,9 +127,9 @@ Craigslist UK serves a broad community of users across the UK who wish to buy, s
 
 | #  | User Story                                                                                                                                                                                     |
 | ---- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| S1 | As a**first-time visitor**, I want to **search for second-hand furniture using a visible search button**, so that **I can find relevant listings without needing to know keyboard shortcuts**. |
-| S2 | As a**user with dyslexia**, I want the **website to use clear, simple language with generous spacing and readable fonts**, so that **I can browse listings without cognitive overload**.       |
-| S3 | As a**mobile user with hand tremors**, I want **large, clearly labelled buttons and touch targets**, so that **I can navigate the site reliably on my smartphone**.                            |
+| S1 | As a **first-time visitor**, I want to **search for second-hand furniture using a visible search button**, so that **I can find relevant listings without needing to know keyboard shortcuts**. |
+| S2 | As a **user with dyslexia**, I want the **website to use clear, simple language with generous spacing and readable fonts**, so that **I can browse listings without cognitive overload**.       |
+| S3 | As a **mobile user with hand tremors**, I want **large, clearly labelled buttons and touch targets**, so that **I can navigate the site reliably on my smartphone**.                            |
 
 #### Tasks — Sarah
 
@@ -174,9 +174,9 @@ Craigslist UK serves a broad community of users across the UK who wish to buy, s
 
 | #  | User Story                                                                                                                                                                                                                            |
 | ---- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| D1 | As a**returning visitor**, I want the **website to remember my preferred listing categories**, so that **I can get back to relevant content quickly without re-configuring my search each time**.                                     |
+| D1 | As a **returning visitor**, I want the **website to remember my preferred listing categories**, so that **I can get back to relevant content quickly without re-configuring my search each time**.                                     |
 | D2 | As a **keyboard user**, I want to **navigate the entire site without a mouse**, so that **I can use the platform comfortably despite limited hand dexterity**.                                                                        |
-| D3 | As a**user with deuteranopia**, I want **status indicators and important information to be conveyed through shape or text labels rather than colour alone**, so that **I do not miss critical information due to colour-coded cues**. |
+| D3 | As a **user with deuteranopia**, I want **status indicators and important information to be conveyed through shape or text labels rather than colour alone**, so that **I do not miss critical information due to colour-coded cues**. |
 
 #### Tasks — Dexter
 
@@ -221,9 +221,9 @@ Craigslist UK serves a broad community of users across the UK who wish to buy, s
 
 | #  | User Story                                                                                                                                                                                  |
 | ---- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| S1 | As a**frequent visitor**, I want to **filter my search results by category and location**, so that **I can quickly find relevant listing without being overwhelmed by irrelevant options**. |
-| S2 | As a**user with ADHD**, I want the **website to have clear visual hierarchy and concise descriptions**, so that **I can focus on the most important information without distractions**.     |
-| S3 | As a**user with visual sensitivity**, I want **the website to offer a dark mode or soft contrast option,**, so that **I can browse without experiencing discomfort**.                       |
+| S1 | As a **frequent visitor**, I want to **filter my search results by category and location**, so that **I can quickly find relevant listing without being overwhelmed by irrelevant options**. |
+| S2 | As a **user with ADHD**, I want the **website to have clear visual hierarchy and concise descriptions**, so that **I can focus on the most important information without distractions**.     |
+| S3 | As a **user with visual sensitivity**, I want **the website to offer a dark mode or soft contrast option,**, so that **I can browse without experiencing discomfort**.                       |
 
 #### Tasks — Lana
 
@@ -319,7 +319,7 @@ The wireframes will be guided by the following standards and principles:
 > *This section will be completed after wireframes are finalised. It should include:*
 >
 > * *A reflection on key decisions made during the design process*
-> * *Challenges faced (e.g., balancing simplicity with accessibility requirements, adapting Craigslist's minimalist identity to modern standards)*
+> * *Challenges faced (e.g., balancing simplicity with accessibility requirements, adapting Craigit gslist's minimalist identity to modern standards)*
 > * *Any iterations or changes made to initial designs in response to user persona requirements*
 > * *Lessons learned about accessible and inclusive design*
 
