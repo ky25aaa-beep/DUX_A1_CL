@@ -57,7 +57,6 @@ The sites semantic landmark region has no deliniation between the topmost row, t
 
 #### 1.5 Competitive Analysis Summary
 
-
 | Feature                    | Craigslist UK | eBay UK | Gumtree |
 | ---------------------------- | --------------- | --------- | --------- |
 | Graphical search button    | ✗            | ✓      | ✓      |
@@ -110,7 +109,6 @@ Craigslist UK serves a broad community of users across the UK who wish to buy, s
 
 ### Persona 1 — Sarah (First-Time Visitor)
 
-
 | Attribute               | Detail                                                                                                                                   |
 | ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
 | **Age**                 | 40                                                                                                                                       |
@@ -124,12 +122,11 @@ Craigslist UK serves a broad community of users across the UK who wish to buy, s
 
 #### User Stories — Sarah
 
-
 | #  | User Story                                                                                                                                                                                     |
 | ---- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| S1 | As a **first-time visitor**, I want to **search for second-hand furniture using a visible search button**, so that **I can find relevant listings without needing to know keyboard shortcuts**. |
-| S2 | As a **user with dyslexia**, I want the **website to use clear, simple language with generous spacing and readable fonts**, so that **I can browse listings without cognitive overload**.       |
-| S3 | As a **mobile user with hand tremors**, I want **large, clearly labelled buttons and touch targets**, so that **I can navigate the site reliably on my smartphone**.                            |
+| S1 | As a**first-time visitor**, I want to **search for second-hand furniture using a visible search button**, so that **I can find relevant listings without needing to know keyboard shortcuts**. |
+| S2 | As a**user with dyslexia**, I want the **website to use clear, simple language with generous spacing and readable fonts**, so that **I can browse listings without cognitive overload**.       |
+| S3 | As a**mobile user with hand tremors**, I want **large, clearly labelled buttons and touch targets**, so that **I can navigate the site reliably on my smartphone**.                            |
 
 #### Tasks — Sarah
 
@@ -157,7 +154,6 @@ Craigslist UK serves a broad community of users across the UK who wish to buy, s
 
 ### Persona 2 — Dexter (Returning Visitor)
 
-
 | Attribute               | Detail                                                                                                                               |
 | ------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
 | **Age**                 | 35                                                                                                                                   |
@@ -171,12 +167,11 @@ Craigslist UK serves a broad community of users across the UK who wish to buy, s
 
 #### User Stories — Dexter
 
-
 | #  | User Story                                                                                                                                                                                                                            |
 | ---- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| D1 | As a **returning visitor**, I want the **website to remember my preferred listing categories**, so that **I can get back to relevant content quickly without re-configuring my search each time**.                                     |
-| D2 | As a **keyboard user**, I want to **navigate the entire site without a mouse**, so that **I can use the platform comfortably despite limited hand dexterity**.                                                                        |
-| D3 | As a **user with deuteranopia**, I want **status indicators and important information to be conveyed through shape or text labels rather than colour alone**, so that **I do not miss critical information due to colour-coded cues**. |
+| D1 | As a**returning visitor**, I want the **website to remember my preferred listing categories**, so that **I can get back to relevant content quickly without re-configuring my search each time**.                                     |
+| D2 | As a**keyboard user**, I want to **navigate the entire site without a mouse**, so that **I can use the platform comfortably despite limited hand dexterity**.                                                                         |
+| D3 | As a**user with deuteranopia**, I want **status indicators and important information to be conveyed through shape or text labels rather than colour alone**, so that **I do not miss critical information due to colour-coded cues**. |
 
 #### Tasks — Dexter
 
@@ -204,7 +199,6 @@ Craigslist UK serves a broad community of users across the UK who wish to buy, s
 
 ### Persona 3 - Lana (Frequent Visitor)
 
-
 | Attribute               | Detail                                                                                                                                                                    |
 | ------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Age**                 | 22                                                                                                                                                                        |
@@ -218,12 +212,11 @@ Craigslist UK serves a broad community of users across the UK who wish to buy, s
 
 #### User Stories — Lana
 
-
 | #  | User Story                                                                                                                                                                                  |
 | ---- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| S1 | As a **frequent visitor**, I want to **filter my search results by category and location**, so that **I can quickly find relevant listing without being overwhelmed by irrelevant options**. |
-| S2 | As a **user with ADHD**, I want the **website to have clear visual hierarchy and concise descriptions**, so that **I can focus on the most important information without distractions**.     |
-| S3 | As a **user with visual sensitivity**, I want **the website to offer a dark mode or soft contrast option,**, so that **I can browse without experiencing discomfort**.                       |
+| S1 | As a**frequent visitor**, I want to **filter my search results by category and location**, so that **I can quickly find relevant listing without being overwhelmed by irrelevant options**. |
+| S2 | As a**user with ADHD**, I want the **website to have clear visual hierarchy and concise descriptions**, so that **I can focus on the most important information without distractions**.     |
+| S3 | As a**user with visual sensitivity**, I want **the website to offer a dark mode or soft contrast option,**, so that **I can browse without experiencing discomfort**.                       |
 
 #### Tasks — Lana
 
@@ -251,7 +244,7 @@ Craigslist UK serves a broad community of users across the UK who wish to buy, s
 ## 3. Design — Wireframes, Accessibility & Usability
 
 > *This section will be completed following the creation of wireframe designs. It should include:*
->
+> 
 > * *Wireframe images for at least 3 pages or page areas (desktop or mobile)*
 > * *Annotations explaining specific design decisions with reference to WCAG 2.1, usability heuristics (e.g., Nielsen's 10 Usability Heuristics), and WAI-ARIA where applicable*
 > * *Notes on how each design choice addresses the needs of the user personas above*
@@ -298,6 +291,7 @@ The wireframes will be guided by the following standards and principles:
 * Clear progress indication for multi-step form submission.
 
 ---
+
 ### 3.5 Page / Area 4 — Avoiding Scams
 
 ![Avoiding Scams Wireframe](/wireframe_images/wireframe_4.png)
@@ -308,7 +302,7 @@ The wireframes will be guided by the following standards and principles:
 * Actionable steps for each tip, showing what to watch for, how to verify listings, and what to do if something seems suspicious.
 * Readable layout organized with headings, bullet points, and icons for quick scanning and avoiding walls of text.
 * Accessible interactions that are fully keyboard and screen reader friendly, with clearly labeled and focusable warnings and examples.
-* Persistent guidance so important warnings about buyer safety are always shown no matter the reason someone clicked on the page. 
+* Persistent guidance so important warnings about buyer safety are always shown no matter the reason someone clicked on the page.
 * Seamless navigation that allows users to leave the page without multiple back clicks while keeping top bar, navbar, and sidebar consistent and functional.
 * Mobile-first design with touch-friendly elements and responsive layout for usability on all screen sizes.
 
@@ -316,17 +310,25 @@ The wireframes will be guided by the following standards and principles:
 
 ## 4. Reflection on the Design Process
 
-> *This section will be completed after wireframes are finalised. It should include:*
->
-> * *A reflection on key decisions made during the design process*
-> * *Challenges faced (e.g., balancing simplicity with accessibility requirements, adapting Craigit gslist's minimalist identity to modern standards)*
-> * *Any iterations or changes made to initial designs in response to user persona requirements*
-> * *Lessons learned about accessible and inclusive design*
+### 4.1 Key Decisions, trade-offs and Successes
+
+The redesign process started with use critically assessing the exisiting craiglist UK site against modern design standards. This analysis npted some serioius deficiencies which extended across the entire site and few were isolated.
+
+A central debate emerged amongst the team: how much could we get done for craiglist and how much of the original minimalistic design could we keep.Its sparesness was part of its identiuty, but it also created a steep learning curve (nayak, 2019). We resolved this by as and where we could maintaining the existing text based buttons, and selectables while also adding icons, this solved two issues for us maintaining that minimalistic approach, while also being adapted for screen readers there was no need to add alt text to our facebook icon as it was followed by facebook or our vehicles icon as it was also followed by the word Vehicles.
+
+### 4.2 Accessibility as a Foundation
+
+Accessibility was not an afterthought of our project unlike the original site, We mapped WCAG 21 Level AA sucess criteria to every one of ourour design decisions:
+
+Each icon/symbol/text maintained acceptable levels of contrast (4.5:1), verified by a check using [webaim contrast checker](https://webaim.org/resources/contrastchecker/), we maintained keyboard navigation by utilising keyboard compatible elements and avoiding dynamic popups where possible.
+
+Semantic Elements - Key Regions where landmarked in nav main and aria labels used to support screen-reader users like Sarah.
+
+
 
 ---
 
 ## 5. Contributors
-
 
 | Name        | Email               |
 | ------------- | --------------------- |
@@ -353,3 +355,4 @@ W3C (2018) *Web Content Accessibility Guidelines (WCAG) 2.1*. World Wide Web Con
 'Gumtree | Free Classified Ads from the #1 Classifieds Site in the UK' (no date) *Gumtree*. Available at: https://www.gumtree.com/ (Accessed: 8 February 2026).
 
 Assignment 1 for DUX Kai, Will and Daniel - Remake of Craigslist UI (Craigslist London) to follow modern design principles, be accessible and open
+
