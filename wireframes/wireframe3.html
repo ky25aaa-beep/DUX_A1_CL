@@ -6,7 +6,7 @@
   <title>craiglist: Post an Ad</title>
   <link rel="stylesheet" href="wireframe.css">
   <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-
+  <script>scr="script.js"></script>
 </head>
 <body>
 
@@ -97,11 +97,124 @@
     <!-- CONTENT -->
     <main class="content">
 
-      <!-- FEATURED POSTS -->
+      <!-- POST AN ADD  -->
       <div class="content-section">
         <div class="section-header">
-          <h2>Post An Ad</h2>Daniel 
-        </div>      
+          <h2>Post An Ad</h2>
+        </div class="section-header">
+
+        <!--dropwdown search-->
+        <h1 style="color:purple;">Type of Advert</h1>
+                <div class="options">
+          <button onclick="myFunction()" class="dropbtn">options</button>
+          <div id="myDropdown" class="dropdown-content">
+            <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+            <a href="#job-offered">Job Offered</a>
+            <a href="#temp-job-offered">Temp Job Offered</a>
+            <a href="#resume-job-wanted">Resume / Job Wanted</a>
+            <a href="#housing-offered">Housing Offered</a>
+            <a href="#housing-wanted">Housing Wanted</a>
+            <a href="#for-sale-by-owner">For Sale by Owner</a>
+            <a href="#for-sale-by-dealer">For Sale by Dealer</a>
+            <a href="#wanted-by-owner">Wanted by Owner</a>
+            <a href="#wanted-by-dealer">Wanted by Dealer</a>
+            <a href="#service-offered">Service Offered</a>
+            <a href="#community">Community</a>
+            <a href="#event-class">Event / Class</a>
+
+
+          </div>
+          
+          <br><br><br>
+<!--name of seller-->
+<style>
+div.mycontainer {
+  width:100%;
+  overflow:auto;
+}
+div.mycontainer div {
+  width:33%;  
+  float:left;
+}
+</style>
+
+<div class="mycontainer">
+
+  <div>
+<form action="">
+  <h2 style="color:purple;">Surname</h2>
+  <input type="text" id="lname" name="lname" value="Doe"><br>
+  <input style="fill-opacity: purple;"type="submit" value="Submit">
+</form>
+  </div>
+  
+  <div>
+  <h2 style="color:purple;">First name</h2>
+  <input type="text" id="fname" name="fname" value="John"><br>
+</form>
+  </div>
+
+</div>
+
+</div>
+</form>
+
+  <h1 style="color:purple;">Upload photos<h1>
+    <div class="profile-picture">
+      <h1 class="upload-icon">
+        <i class="fa fa-plus fa-2x" aria-hidden="true"></i>
+      </h1>
+      <input
+        class="file-uploader"
+        type="file"
+        onchange="upload()"
+        accept="image/*"
+      />
+    </div>
+  
+</form>
+<!--selection answers-->
+<style>
+div.mycontainer {
+  width:100%;
+  overflow:auto;
+}
+div.mycontainer div {
+  width:33%;  
+  float:left;
+}
+</style>
+
+<div class="mycontainer">
+
+  <div>
+<label style="color: purple;" for="PropType">property type</label><br>
+<select name="PropType" id="PropType">
+  <option value="house">house</option>
+  <option value="flat">flat</option>
+  <option value="town house">town house</option>
+</select>
+  </div>
+  
+  <div>
+<span style="color: purple;">rent or sell</span>
+<input type="checkbox" name="rent or sell"checked />
+<input type="checkbox" name="rent or sell" />
+  </div>
+
+    <div>
+<form action="">
+  <h3 style="color:purple;">Price</h3>
+  <input type="text" id="Price" name="Price" value="Doe"><br>
+  <input type="submit" value="Submit">
+</form>
+  </div>
+</div>
+</div>
+
+
+    </div>
+        </div>
       </div>
 
     </main>
@@ -207,6 +320,5 @@
       </div>
     </div>
   </footer>
-
 </body>
 </html>
