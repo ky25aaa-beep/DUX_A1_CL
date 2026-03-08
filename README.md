@@ -379,6 +379,8 @@ CSS for the to make the input bars fit the section with the `grid` fuction by se
   grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr));
   gap: 1rem;
 }
+```
+
 CSS for the Upload background image which controls the size and shadow of the bottom of the image to prevent it from blending into the pages white base background
 ```CSS
 .profile-picture {
