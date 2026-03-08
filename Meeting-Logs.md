@@ -13,7 +13,7 @@
 - Decision: Pivoted from YouTube to **Craigslist**
 - Rationale: YouTube design insights gathered; ready to explore alternative platform
 - Began user research phase for Craigslist users
-- Daniel Missed (Unwell)
+- Daniel Missed (Unwell) 
 
 ## Week 3 - February 18
 **Thursday**
