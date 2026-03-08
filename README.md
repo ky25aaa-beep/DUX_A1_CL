@@ -341,7 +341,8 @@ The shared repository was only instituted when neccessary, prior to this a share
 Overall, the redesign process demonstrated to us how, legacy platforms can benefit from modern usability practices and how very popular coners on the internet are still years behind in levels of design and usability especially when it comes to their accessibility. By introducing clearer visual heirachy, improved navigaion and a full interface rredesign. We were able to transform craiglist from a site only compatible with basic support features of accessiblity tools like screen readers, braille etc, to one supported by loads of complex accessibility tools, but also for individuals with impairments that don't have accessibility devices our surface level website is more accessible with greater contrast etc.
 
 Through this project the team gained a deeper understanding of the relationship between usability, accessibility, and user-centred design, and how these principles can be applied to improve real-world digital platforms.
----
+
+
 
 ## 5. Contributors
 
