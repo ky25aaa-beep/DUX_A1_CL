@@ -320,6 +320,62 @@ Including descriptive `alt` attributes ensures that users relying on screen read
 * Large input fields with visible labels (not placeholder-only labels, which disappear on focus).
 * Auto-save functionality at defined intervals to prevent data loss for users with slower input speeds.
 
+**Implementation Notes:** the Post a Listing Form layout like the homepage and search page but it mainly focused on gain information from the possible sellers with minimal distractions. Most changes are made in then <main> segment with additions to the CSS file while <nav>, <header>, <aside>, <footer> stayed the same.
+For example, the listing type and property type follows the same format where you have limited options to select from to prevent wrong information from being inputted for the listing by the <select> only allows selection of the <options>
+```html
+ <form class="post-ad-form" action="#">
+          <div class="post-ad-grid">
+            <div class="form-group ad-type-field">
+              <label for="adType">Type of advert</label>
+              <select id="adType" name="adType">
+                <option value="for-sale-owner">For Sale by Owner</option>
+                <option value="for-sale-dealer">For Sale by Dealer</option>
+                <option value="housing-offered">Housing Offered</option>
+                <option value="housing-wanted">Housing Wanted</option>
+                <option value="job-offered">Job Offered</option>
+                <option value="service-offered">Service Offered</option>
+                <option value="community">Community</option>
+                <option value="event-class">Event / Class</option>
+              </select>
+            </div>
+```
+Any input that is need user input is set to <input type=text> for any manual inputs from the poster such as: firstname, surname , description ad title and price
+```html
+  <div class="form-group first-name-field">
+              <label for="firstName">First name</label>
+              <input type="text" id="firstName" name="firstName" placeholder="John">
+            </div>
+```
+For the upload photo function there is a blank empty photo icon that makes it intuitive to interact with the image to upload the photo which had the “file uploader” input function
+
+CSS for the Upload background image which controls the size and shadow of the bottom of the image to prevent it from blending into the pages white base background
+```html
+          <div class="photo-upload-row">
+            <div class="photo-upload-title">Upload photos</div>
+            <div class="profile-picture">
+              <h1 class="upload-icon"><i class="fa fa-plus fa-2x" aria-hidden="true"></i></h1>
+              <input class="file-uploader" type="file" accept="image/*">
+            </div>
+          </div>
+
+```
+The website already saves the inputted data so the btn-secondary is mostly for placebo effect and the btn-primary submits the ad with the type=“submit”
+```html
+  <div class="post-ad-actions">
+            <button type="submit" class="btn btn-primary">publish ad</button>
+            <button type="button" class="btn btn-secondary">save draft</button>
+          </div>
+        </form>
+      </div>
+```
+CSS for the to make the input bars fit the section with the 'grid' fuction by seeting the column legnth
+```CSS
+.ads-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr));
+  gap: 1rem;
+}
+```
 ---
 
 ### 3.5 Page / Area 4 — Avoiding Scams
