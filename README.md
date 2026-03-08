@@ -322,7 +322,7 @@ Including descriptive `alt` attributes ensures that users relying on screen read
 
 **Implementation Notes:** the Post a Listing Form layout like the homepage and search page but it mainly focused on gain information from the possible sellers with minimal distractions. Most changes are made in then `<main>` segment with additions to the CSS file while `<nav>`, `<header>`, `<aside>`, `<footer>` stayed the same.
 
-For example, the listing type and property type follows the same format where you have limited options to select from to prevent wrong information from being inputted for the listing by the `<select>` only allows selection of the `<options>`
+For example, the listing type and property type follows the same format where you have limited options to select from to prevent wrong information from being inputted for the listing by the `<select>` only allows selection of the `<options>`.
 
 ```html
  <form class="post-ad-form" action="#">
@@ -342,7 +342,7 @@ For example, the listing type and property type follows the same format where yo
             </div>
 ```
 
-Any input that is need user input is set to `type=text` for any manual inputs from the poster such as: firstname, surname , description ad title and price
+Any input that is need user input is set to `type=text` for any manual inputs from the poster such as: firstname, surname , description ad title and price.
 ```html
   <div class="form-group first-name-field">
               <label for="firstName">First name</label>
@@ -350,7 +350,7 @@ Any input that is need user input is set to `type=text` for any manual inputs fr
             </div>
 ```
 
-The website already saves the inputted data so the `btn-secondary` is mostly for placebo effect and the `btn-primary` submits the ad with the `type=“submit”`
+The website already saves the inputted data so the `btn-secondary` is mostly for placebo effect and the `btn-primary` submits the ad with the `type=“submit”`.
 ```html
   <div class="post-ad-actions">
             <button type="submit" class="btn btn-primary">publish ad</button>
@@ -360,7 +360,7 @@ The website already saves the inputted data so the `btn-secondary` is mostly for
       </div>
 ```
 
-For the upload photo function there is a blank empty photo icon that makes it intuitive to interact with the image to upload the photo which had the `“file uploader”`
+For the upload photo function there is a blank empty photo icon that makes it intuitive to interact with the image to upload the photo which had the `“file uploader”`.
 ```html
           <div class="photo-upload-row">
             <div class="photo-upload-title">Upload photos</div>
@@ -372,7 +372,7 @@ For the upload photo function there is a blank empty photo icon that makes it in
 
 ```
 
-CSS for the to make the input bars fit the section with the `grid` fuction by seeting the column's `midmax`
+CSS for the to make the input bars fit the section with the `grid` fuction by seeting the column's `midmax`.
 ```CSS
 .ads-grid {
   display: grid;
@@ -381,7 +381,7 @@ CSS for the to make the input bars fit the section with the `grid` fuction by se
 }
 ```
 
-CSS for the Upload background image which controls the size and `shadow` of the bottom of the image to prevent it from blending into the pages white base background
+CSS for the Upload background image which controls the size and `shadow` of the bottom of the image to prevent it from blending into the pages white base background.
 ```CSS
 .profile-picture {
   opacity: 0.75;
