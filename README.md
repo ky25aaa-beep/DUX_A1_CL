@@ -338,6 +338,71 @@ Including descriptive `alt` attributes ensures that users relying on screen read
 
 ---
 
+### 3.6 Page / Area 5 — Open Ad
+
+![Open Ad Wireframe](./wireframe_images/wireframe_5.png)
+
+**Design Notes:**
+
+* The page is designed primarily for mobile so the advertisement information appears first ensuring users immediately see the item details before any messaging interactions
+* The listing is presented as a single card containing the image, title, price, location and description. This structure makes it easy for the user to quickly understand what is being sold
+* The Ad image scales to fit the screen width while maintaining aspect ratio, with alternative text to provide support for screen readers and improve accessibility for visually impaired users.
+* The price and location are visually seperated from the description to make key information easily identifiable at a glance
+* Messages from buyers and sellers use different styling and alignment so users can easily follow the conversation without relying solely on coulor differences
+* The header, navigation bar, and footer remain consistent with the rest of the site, helping users maintain orientation and navigate between categories, listing and help resources without confusion
+* Buttons, links and input fields are sized appropriately for mobile touch interactions to minimise accidental taps and improve usability on smaller screens
+
+**Implementation Notes:**
+The Open Ad page is implemented using semantic HTML to clearly separate the listing content, messaging system, and overall page structure. Elements such as `<header>`,` <nav>`, `<main>`, `<section>`, and `<footer>` are used to improve accessibility, assistive technology support, and logical document structure.
+
+For example, the main Ad listing is displayed using a card-style layout. This groups the image, price, description, and seller information together.
+
+```html
+<div class="ad-card">
+    <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4"
+         alt="Upright Piano">
+
+    <div class="ad-card-body">
+        <div class="ad-card-title">Upright Piano for Sale</div>
+        <div class="ad-card-price">£400</div>
+        <div class="ad-card-location">📍 Camden, London</div>
+
+        <div class="ad-card-desc">
+            Well-maintained upright piano, perfect for beginners and students.
+        </div>
+    </div>
+</div>
+```
+
+This card-based structure ensure the key information can be quickly scanned by buyers. The descriptive alt text for the image ensures the listing remains understandable for users relying on screen readers.
+
+The private messaging system is implemented directly below the Ad using a threaded layout. Messages are contained inside a `.messages-thread` container which uses Flexbox to stack messages vertically
+
+```html
+<div class="messages-thread">
+    <div class="seller-card message-buyer">
+        <h5>Short Rob (Buyer)</h5>
+        <p>Hi Tall Rob, is the upright piano still available?</p>
+    </div>
+
+    <div class="seller-card message-seller">
+        <h5>Tall Rob (Seller)</h5>
+        <p>Hey Short Rob, yes it is. You're welcome to come see it this weekend.</p>
+    </div>
+</div>
+```
+
+Each message is styled using the `.seller-card` class, which provides the base card styling including borders, padding and typography.
+Buyers messages include an additional `.message-buyer` class, which modifies the layout to visually separate the response from the seller messages:
+```css
+.messages-thread .message-buyer {
+border-left: 1px solid #d0c8d8;
+border-right: 4px solid #800080;
+text-align: right;
+}
+
+```
+
 ## 4. Reflection on the Design Process
 
 ### 4.1 Key Decisions, trade-offs and Successes
