@@ -258,6 +258,37 @@ The wireframes will be guided by the following standards and principles:
 * **Nielsen's Usability Heuristics** — particularly visibility of system status, consistency with external standards, error prevention, and recognition over recall.
 * **Mobile-first responsive design** — layouts designed for small screens first and scaled up, with touch targets of at least 44×44px.
 
+#### 3.1.1 Indepth Review of WCAG Design Principles Applied
+
+The design follows several key principles from the Web Content Accessibilty Guidilenes, Focusing on making the interface percievable, operable and understandable. 
+
+* Text Alternatives for non-text content where used, every social media logo/icon was backed with alt text and displayed text of what it was, the same with advert images, and other graphical content.
+
+* Keyboard Accessibilty, Grid allignment was used where possible to ensure keyboard based navigation would perform amuicably well as well as using components such as `<buttons>`, `<input>`, and `<select>`, where possible and clearly labelled. 
+
+* Colour is not used as the only method of conveying information. For example, the messaging interface differentiates buyer and seller messages using alignment and border styles in addition to colour.
+
+#### 3.1.2 Indepth Review of Nielsen’s Usability Heuristics Applied
+
+**Visibility of System Status**
+
+Interactive elements such as buttons and form submissions provide clear visual feedback so users know when actions have been performed.
+
+**Consistency and Standards**
+
+The header, navigation bar, sidebar, and footer remain consistent across all pages. This helps users learn the layout once and reuse that knowledge throughout the site.
+
+**Recognition Rather Than Recall**
+
+Listings are displayed as cards containing images, titles, prices, and locations. This reduces cognitive load by allowing users to visually recognise items rather than remember search details.
+
+**Error Prevention**
+
+Form inputs such as advert type are controlled using dropdown <select> elements with predefined options. This reduces the likelihood of incorrect or inconsistent user input.
+
+**Flexibility and Efficiency of Use**
+
+The search bar is prominently placed on the homepage so both experienced users and new visitors can quickly begin searching for listings.
 ### 3.2 Page / Area 1 — Homepage
 
 ![Homepage Wireframe](./wireframe_images/wireframe_1.png)
