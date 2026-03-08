@@ -320,8 +320,10 @@ Including descriptive `alt` attributes ensures that users relying on screen read
 * Large input fields with visible labels (not placeholder-only labels, which disappear on focus).
 * Auto-save functionality at defined intervals to prevent data loss for users with slower input speeds.
 
-**Implementation Notes:** the Post a Listing Form layout like the homepage and search page but it mainly focused on gain information from the possible sellers with minimal distractions. Most changes are made in then <main> segment with additions to the CSS file while <nav>, <header>, <aside>, <footer> stayed the same.
-For example, the listing type and property type follows the same format where you have limited options to select from to prevent wrong information from being inputted for the listing by the <select> only allows selection of the <options>
+**Implementation Notes:** the Post a Listing Form layout like the homepage and search page but it mainly focused on gain information from the possible sellers with minimal distractions. Most changes are made in then `<main>` segment with additions to the CSS file while `<nav>`, `<header>`, `<aside>`, `<footer>` stayed the same.
+
+For example, the listing type and property type follows the same format where you have limited options to select from to prevent wrong information from being inputted for the listing by the `<select>` only allows selection of the `<options>`
+
 ```html
  <form class="post-ad-form" action="#">
           <div class="post-ad-grid">
@@ -339,16 +341,26 @@ For example, the listing type and property type follows the same format where yo
               </select>
             </div>
 ```
-Any input that is need user input is set to <input type=text> for any manual inputs from the poster such as: firstname, surname , description ad title and price
+
+Any input that is need user input is set to `type=text` for any manual inputs from the poster such as: firstname, surname , description ad title and price
 ```html
   <div class="form-group first-name-field">
               <label for="firstName">First name</label>
               <input type="text" id="firstName" name="firstName" placeholder="John">
             </div>
 ```
-For the upload photo function there is a blank empty photo icon that makes it intuitive to interact with the image to upload the photo which had the “file uploader” input function
 
-CSS for the Upload background image which controls the size and shadow of the bottom of the image to prevent it from blending into the pages white base background
+The website already saves the inputted data so the `btn-secondary` is mostly for placebo effect and the `btn-primary` submits the ad with the `type=“submit”`
+```html
+  <div class="post-ad-actions">
+            <button type="submit" class="btn btn-primary">publish ad</button>
+            <button type="button" class="btn btn-secondary">save draft</button>
+          </div>
+        </form>
+      </div>
+```
+
+For the upload photo function there is a blank empty photo icon that makes it intuitive to interact with the image to upload the photo which had the “file uploader” input function
 ```html
           <div class="photo-upload-row">
             <div class="photo-upload-title">Upload photos</div>
@@ -359,23 +371,33 @@ CSS for the Upload background image which controls the size and shadow of the bo
           </div>
 
 ```
-The website already saves the inputted data so the btn-secondary is mostly for placebo effect and the btn-primary submits the ad with the type=“submit”
-```html
-  <div class="post-ad-actions">
-            <button type="submit" class="btn btn-primary">publish ad</button>
-            <button type="button" class="btn btn-secondary">save draft</button>
-          </div>
-        </form>
-      </div>
-```
-CSS for the to make the input bars fit the section with the 'grid' fuction by seeting the column legnth
+
+CSS for the to make the input bars fit the section with the `grid` fuction by seeting the column's `midmax`
 ```CSS
 .ads-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr));
   gap: 1rem;
 }
+CSS for the Upload background image which controls the size and shadow of the bottom of the image to prevent it from blending into the pages white base background
+```CSS
+.profile-picture {
+  opacity: 0.75;
+  height: 250px;
+  width: 250px;
+  position: relative;
+  overflow: hidden;
+
+  /* default image */
+  background: url('https://media.istockphoto.com/id/1324356458/vector/picture-icon-photo-frame-symbol-landscape-sign-photograph-gallery-logo-web-interface-and.jpg?s=612x612&w=0&k=20&c=ZmXO4mSgNDPzDRX-F8OKCfmMqqHpqMV6jiNi00Ye7rE=');
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0 8px 6px -6px black;
+}
 ```
+
 ---
 
 ### 3.5 Page / Area 4 — Avoiding Scams
