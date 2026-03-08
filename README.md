@@ -270,32 +270,37 @@ The wireframes will be guided by the following standards and principles:
 * "Recently Viewed" section for returning users such as Dexter.
 
 **Implementation Notes:**
-<code><pre>The homepage layout is implemented using semantic HTML elements such as <header>, <nav>, <main>, <aside>, and <footer>. These elements improve accessibility and screen reader navigation by clearly defining the structure of the page.
+The homepage layout is implemented using semantic HTML elements such as `<header>`, `<nav>`, `<main>`, `<aside>`, and `<footer>`. These elements improve accessibility and screen reader navigation by clearly defining the structure of the page.
 
-For example, the main site navigation is implemented using the <nav> element:
+For example, the main site navigation is implemented using the `<nav>` element:
+
+```html
 <nav>
-<form>
-<input type="search" placeholder="search classifieds...">
-<button type="submit" class="btn btn-primary">go</button>
-</form>
-<a href="index.html">home</a>
-<a href="#">community</a>
-<a href="ads.html">for sale</a>
+  <form>
+    <input type="search" placeholder="search classifieds...">
+    <button type="submit" class="btn btn-primary">go</button>
+  </form>
+  <a href="index.html">home</a>
+  <a href="#">community</a>
+  <a href="ads.html">for sale</a>
 </nav>
+```
 
-This structure provides a clearly labelled search field with a visible “go” button, supporting users who may not rely on keyboard shortcuts. The use of type="search" also improves accessibility and browser behaviour.
+This structure provides a clearly labelled search field with a visible "go" button, supporting users who may not rely on keyboard shortcuts. The use of `type="search"` also improves accessibility and browser behaviour.
 
 The featured listings and local ads are displayed using a card-based grid layout, which helps users quickly scan information such as title, price, location, and description. Each advertisement is structured consistently:
 
+```html
 <div class="ad-card">
-<img src="..." alt="Vintage Bicycle">
-<div class="ad-card-title">Vintage Raleigh Bicycle</div>
-<div class="ad-card-price">£120</div>
-<div class="ad-card-location">📍 Shoreditch, London</div>
+  <img src="..." alt="Vintage Bicycle">
+  <div class="ad-card-title">Vintage Raleigh Bicycle</div>
+  <div class="ad-card-price">£120</div>
+  <div class="ad-card-location">📍 Shoreditch, London</div>
 </div>
+```
 
-Including descriptive alt attributes ensures that users relying on screen readers can understand the content of images.
-</code></pre>
+Including descriptive `alt` attributes ensures that users relying on screen readers can understand the content of images.
+
 ### 3.3 Page / Area 2 — Search Results Page
 
 ![Search Results Wireframe](./wireframe_images/wireframe_2.png)
@@ -347,7 +352,7 @@ Accessibility was not an afterthought of our project unlike the original site, W
 
 Each icon/symbol/text maintained acceptable levels of contrast (4.5:1), verified by a check using [webaim contrast checker](https://webaim.org/resources/contrastchecker/), we maintained keyboard navigation by utilising keyboard compatible elements and avoiding dynamic popups where possible.
 
-Semantic Elements - Key regions were landmarked in the navigation and page structure to improve compatibility with assistive technologies. The redesign separates the page into clearly defined <header>, <nav>, <main>, <aside>, and <footer> sections so that screen readers can interpret the structure of the page correctly. This directly addresses one of the major accessibility problems identified in the original Craigslist site where navigation, search, and account controls were grouped together without clear separation.
+Semantic Elements - Key regions were landmarked in the navigation and page structure to improve compatibility with assistive technologies. The redesign separates the page into clearly defined `<header>`, `<nav>`, `<main>`, `<aside>`, and `<footer>` sections so that screen readers can interpret the structure of the page correctly. This directly addresses one of the major accessibility problems identified in the original Craigslist site where navigation, search, and account controls were grouped together without clear separation.
 
 By structuring the layout using semantic landmarks, users relying on screen readers or braille displays can skip between major areas of the page instead of being forced to read through the entire header each time they load a new page. This significantly improves efficiency and aligns the design with WCAG 2.1 guidelines relating to navigable page structure.
 
@@ -357,7 +362,7 @@ Another accessibility consideration was avoiding the use of colour alone to comm
 
 The design process was collaborative between all three team members, with responsibilities shared across research, wireframing, and documentation. Initial analysis of the Craigslist interface was conducted collectively, with each team member identifying usability and accessibility issues through heuristic evaluation and comparison with competitor platforms such as eBay and Gumtree.
 
-Once the key issues had been identified, the team began developing wireframes to address those problems while still maintaining Craigslist’s core identity as a simple community classifieds platform. Feedback was exchanged throughout the process, allowing designs to be refined and improved iteratively.
+Once the key issues had been identified, the team began developing wireframes to address those problems while still maintaining Craigslist's core identity as a simple community classifieds platform. Feedback was exchanged throughout the process, allowing designs to be refined and improved iteratively.
 
 Using a shared repository allowed the team to track contributions and maintain version control of the project documentation and design files. This also ensured transparency in individual contributions and made it easier to combine different sections of the assignment into a cohesive final report.
 
@@ -379,7 +384,6 @@ Through this project the team gained a deeper understanding of the relationship 
 | Will Cooper  | wg25aac@herts.ac.uk   |
 | Daniel Zhang | dz25aaa@herts.ac.uk   |
 
-> *Update this table with actual emails. All Team Members have to have made commits to the repository*
 
 ---
 
@@ -398,4 +402,3 @@ W3C (2018) *Web Content Accessibility Guidelines (WCAG) 2.1*. World Wide Web Con
 'Gumtree | Free Classified Ads from the #1 Classifieds Site in the UK' (no date) *Gumtree*. Available at: https://www.gumtree.com/ (Accessed: 8 February 2026).
 
 Assignment 1 for DUX Kai, Will and Daniel - Remake of Craigslist UI (Craigslist London) to follow modern design principles, be accessible and open
-
