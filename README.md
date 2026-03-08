@@ -53,7 +53,7 @@ Craigslist does not implement responsive design patterns such as dropdown menus,
 
 The site uses inconsistent semantic landmark regions, provides minimal colour contrast differentiation between content areas, and offers no ARIA attributes or skip-navigation links. This makes the site difficult or impossible to use for people relying on screen readers, keyboard navigation, or assistive technologies — a failure to meet WCAG 2.1 Level AA standards (W3C, 2018).
 
-The sites semantic landmark region has no delineation between the topmost row, that selects the region, category allows access to post creation and account information, and the search functions this means every time a screen reader or braille device goes over the header section they read both navigation information and site controls (region, category, post creation, and account information), instead of what should happen where navigation search and main are in three identifiable sections for those tools.
+The sites semantic landmark region has no delineation between the topmost row, that selects the region, category, allows access to post creation and account information, and the search functions this means every time a screen reader or braille device goes over the header section they read both navigation information and site controls (region, category, post creation, and account information), instead of what should happen where navigation, search, and main are in three identifiable sections for those tools.
 
 #### 1.5 Competitive Analysis Summary
 
