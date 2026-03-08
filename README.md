@@ -433,6 +433,7 @@ CSS for the Upload background image which controls the size and `shadow` of the 
 * Buttons, links and input fields are sized appropriately for mobile touch interactions to minimise accidental taps and improve usability on smaller screens
 
 **Implementation Notes:**
+
 The Open Ad page is implemented using semantic HTML to clearly separate the listing content, messaging system, and overall page structure. Elements such as `<header>`,` <nav>`, `<main>`, `<section>`, and `<footer>` are used to improve accessibility, assistive technology support, and logical document structure.
 
 For example, the main Ad listing is displayed using a card-style layout. This groups the image, price, description, and seller information together.
