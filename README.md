@@ -269,6 +269,33 @@ The wireframes will be guided by the following standards and principles:
 * Sufficient spacing between interactive elements to support users with hand tremors or motor impairments.
 * "Recently Viewed" section for returning users such as Dexter.
 
+**Implementation Notes:**
+<code><pre>The homepage layout is implemented using semantic HTML elements such as <header>, <nav>, <main>, <aside>, and <footer>. These elements improve accessibility and screen reader navigation by clearly defining the structure of the page.
+
+For example, the main site navigation is implemented using the <nav> element:
+<nav>
+<form>
+<input type="search" placeholder="search classifieds...">
+<button type="submit" class="btn btn-primary">go</button>
+</form>
+<a href="index.html">home</a>
+<a href="#">community</a>
+<a href="ads.html">for sale</a>
+</nav>
+
+This structure provides a clearly labelled search field with a visible “go” button, supporting users who may not rely on keyboard shortcuts. The use of type="search" also improves accessibility and browser behaviour.
+
+The featured listings and local ads are displayed using a card-based grid layout, which helps users quickly scan information such as title, price, location, and description. Each advertisement is structured consistently:
+
+<div class="ad-card">
+<img src="..." alt="Vintage Bicycle">
+<div class="ad-card-title">Vintage Raleigh Bicycle</div>
+<div class="ad-card-price">£120</div>
+<div class="ad-card-location">📍 Shoreditch, London</div>
+</div>
+
+Including descriptive alt attributes ensures that users relying on screen readers can understand the content of images.
+</code></pre>
 ### 3.3 Page / Area 2 — Search Results Page
 
 ![Search Results Wireframe](./wireframe_images/wireframe_2.png)
