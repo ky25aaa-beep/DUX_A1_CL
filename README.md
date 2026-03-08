@@ -261,11 +261,8 @@ The wireframes will be guided by the following standards and principles:
 #### 3.1.1 Indepth Review of WCAG Design Principles Applied
 
 The design follows several key principles from the Web Content Accessibilty Guidilenes, Focusing on making the interface percievable, operable and understandable. 
-
 * Text Alternatives for non-text content where used, every social media logo/icon was backed with alt text and displayed text of what it was, the same with advert images, and other graphical content.
-
 * Keyboard Accessibilty, Grid allignment was used where possible to ensure keyboard based navigation would perform amuicably well as well as using components such as `<buttons>`, `<input>`, and `<select>`, where possible and clearly labelled. 
-
 * Colour is not used as the only method of conveying information. For example, the messaging interface differentiates buyer and seller messages using alignment and border styles in addition to colour.
 
 #### 3.1.2 Indepth Review of Nielsen’s Usability Heuristics Applied
@@ -284,7 +281,7 @@ Listings are displayed as cards containing images, titles, prices, and locations
 
 **Error Prevention**
 
-Form inputs such as advert type are controlled using dropdown <select> elements with predefined options. This reduces the likelihood of incorrect or inconsistent user input.
+Form inputs such as advert type are controlled using dropdown `<select>` elements with predefined options. This reduces the likelihood of incorrect or inconsistent user input.
 
 **Flexibility and Efficiency of Use**
 
