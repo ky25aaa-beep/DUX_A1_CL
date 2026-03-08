@@ -3,13 +3,13 @@
    Classic classified-ads aesthetic
    =========================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Tahoma:wght@400;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Lexend:wght@400;700&display=swap');
+/* Google Fonts
 /* ---- Reset & Base ---- */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Lexend;
   font-size: 13px;
   background: #f5f5f0;
   color: #222;
@@ -261,6 +261,117 @@ main.content {
   color: #555;
 }
 
+/* ---- Messages thread ---- */
+.messages-thread {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  margin-bottom: 0.9rem;
+}
+
+.messages-thread .seller-card {
+  border-right: 1px solid #d0c8d8;
+}
+
+.messages-thread .message-buyer {
+  border-left: 1px solid #d0c8d8;
+  border-right: 4px solid #800080;
+  text-align: right;
+}
+
+.message-compose textarea {
+  width: 100%;
+  min-height: 72px;
+  border: 1px solid #bbb;
+  border-radius: 2px;
+  font-family: inherit;
+  font-size: 12px;
+  background: #fff;
+  padding: 0.45rem 0.55rem;
+  resize: vertical;
+}
+
+/* ---- Post ad form ---- */
+.post-ad-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.post-ad-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.9rem;
+}
+
+.ad-type-field {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.first-name-field {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.last-name-field {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.post-ad-form .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.post-ad-form .form-group label {
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.post-ad-form input[type="text"],
+.post-ad-form select,
+.post-ad-form textarea {
+  border: 1px solid #bbb;
+  border-radius: 2px;
+  padding: 0.45rem 0.55rem;
+  font-family: inherit;
+  font-size: 12px;
+  background: #fff;
+}
+
+.post-ad-form select:disabled {
+  background: #ececec;
+  color: #888;
+  cursor: not-allowed;
+}
+
+.post-ad-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.post-ad-form .form-span-2 {
+  grid-column: span 2;
+}
+
+.photo-upload-row {
+  border: 1px solid #d8cce0;
+  padding: 0.8rem;
+}
+
+
+.file-uploader {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+
+
 /* ---- Content section boxes ---- */
 .content-section {
   background: #fff;
@@ -322,9 +433,7 @@ main.content {
   padding-bottom: 0.4rem;
 }
 
-/* ============================
-   FOOTER — Craigslist-style
-   ============================ */
+/* ---- Footer ---- */
 
 footer {
   background: #2a002a;
@@ -427,10 +536,12 @@ footer {
   aside { flex: none; }
   header { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
   nav { flex-wrap: wrap; }
+  .post-ad-grid { grid-template-columns: 1fr; }
+  .post-ad-form .form-span-2 { grid-column: auto; }
 }
 
 
-/* Dropdown Button */
+/* ---- Dropdown button ---- */
 .dropbtn {
   background-color: #800080;
   color: white;
@@ -440,12 +551,12 @@ footer {
   cursor: pointer;
 }
 
-/* Dropdown button on hover & focus */
+/* ---- Dropdown hover/focus ---- */
 .dropbtn:hover, .dropbtn:focus {
   background-color: #800080;
 }
 
-/* The search field */
+/* ---- Dropdown search field ---- */
 #myInput {
   box-sizing: border-box;
   background-image: url('searchicon.png');
@@ -457,16 +568,16 @@ footer {
   border-bottom: 1px solid #ddd;
 }
 
-/* The search field when it gets focus/clicked on */
+/* ---- Dropdown search focus ---- */
 #myInput:focus {outline: 3px solid #ddd;}
 
-/* The container <div> - needed to position the dropdown content */
+/* ---- Dropdown container ---- */
 .dropdown {
   position: relative;
   display: inline-block;
 }
 
-/* Dropdown Content (Hidden by Default) */
+/* ---- Dropdown content ---- */
 .dropdown-content {
   display: none;
   position: absolute;
@@ -476,7 +587,7 @@ footer {
   z-index: 1;
 }
 
-/* Links inside the dropdown */
+/* ---- Dropdown links ---- */
 .dropdown-content a {
   color: black;
   font-size: 12px;
@@ -486,13 +597,14 @@ footer {
 
 }
 
-/* Change color of dropdown links on hover */
+/* ---- Dropdown links hover ---- */
 .dropdown-content a:hover {background-color: #444}
 
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+/* ---- Dropdown show state ---- */
 .show {display:block;}
 
 
+/* ---- Profile picture upload ---- */
 .profile-picture {
   opacity: 0.75;
   height: 250px;

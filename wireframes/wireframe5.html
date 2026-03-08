@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Craigslist: View Ad</title>
+    <title>craiglist: Open Ad</title>
     <link rel="stylesheet" href="wireframe.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 </head>
 <body>
 
-
 <header>
     <div class="header-left">
-        <h1>Craigslist</h1>
-        <h3>📍 London, UK</h3>
+        <h1>craiglist</h1>
+        <h3>London UK</h3>
     </div>
     <div class="header-right">
         <button class="btn btn-primary">post to classifieds</button>
@@ -20,53 +20,76 @@
     </div>
 </header>
 
+<nav>
+    <form>
+        <input type="search" placeholder="search classifieds...">
+        <button type="submit" class="btn btn-primary">go</button>
+    </form>
+    <a href="index.html">home</a>
+    <a href="#">community</a>
+    <a href="ads.html">for sale</a>
+    <a href="#">housing</a>
+    <a href="#">jobs</a>
+    <a href="#">services</a>
+    <a href="#">help</a>
+</nav>
 
 <div class="page-wrap">
-
     <main class="content">
-        <div class="ad-card">
-            <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=600&q=80"
-                 alt="Upright Piano"
-                 style="height: auto; max-width: 100%; object-fit: contain; display: block;">>
-            <div class="ad-card-body">
-                <div class="ad-card-title">Upright Piano for Sale</div>
-                <div class="ad-card-price">£400</div>
-                <div class="ad-card-location">📍 Camden, London</div>
-                <div class="ad-card-desc">
-                    Well-maintained upright piano, perfect for beginners and students. Recently tuned.
+        <div class="content-section">
+            <div class="section-header">
+                <h2>Open Ad</h2>
+            </div>
+            <div class="ad-card">
+                <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=900&q=80"
+                     alt="Upright Piano"
+                     style="height: auto; max-width: 100%; object-fit: contain; display: block;">
+                <div class="ad-card-body">
+                    <div class="ad-card-title">Upright Piano for Sale</div>
+                    <div class="ad-card-price">£400</div>
+                    <div class="ad-card-location">📍 Camden, London</div>
+                    <div class="ad-card-desc">
+                        Well-maintained upright piano, perfect for beginners and students. Recently tuned.
+                    </div>
+                    <p>
+                        <strong>Type:</strong> Upright Piano<br>
+                        <strong>Condition:</strong> Used<br>
+                        <strong>Dimensions:</strong> 110cm H x 150cm W x 60cm D<br>
+                        <strong>Pickup:</strong> Buyer collects from Camden, London<br>
+                        <strong>Seller:</strong> Tall Rob (member since 2019, ★★★★☆)
+                    </p>
+                    <a href="#" class="btn btn-primary">contact seller</a>
                 </div>
-                <a href="#" class="btn btn-primary">contact seller</a>
             </div>
         </div>
 
         <div class="content-section">
-            <h2 class="section-header">Ad Details</h2>
-            <p>
-                Type: Upright Piano<br>
-                Condition: Used<br>
-                Dimensions: 110cm H x 150cm W x 60cm D<br>
-                Pickup: Buyer collects from Camden, London
-            </p>
+            <div class="section-header">
+                <h2>Private Messages</h2>
+            </div>
+            <div class="messages-thread">
+                <div class="seller-card message-buyer">
+                    <h5>Short Rob (Buyer)</h5>
+                    <p>Hi Tall Rob, is the upright piano still available?</p>
+                </div>
+                <div class="seller-card message-seller">
+                    <h5>Tall Rob (Seller)</h5>
+                    <p>Hey Short Rob, yes it is. You're welcome to come see it this weekend.</p>
+                </div>
+                <div class="seller-card message-buyer">
+                    <h5>Short Rob (Buyer)</h5>
+                    <p>Great, does Saturday afternoon work for pickup if all looks good?</p>
+                </div>
+                <div class="seller-card message-seller">
+                    <h5>Tall Rob (Seller)</h5>
+                    <p>Perfect. Saturday at 2pm works — I’ll send the full address.</p>
+                </div>
+            </div>
+            <div class="message-compose">
+                <textarea aria-label="message input"></textarea>
+                <button class="btn btn-primary">Reply</button>
+            </div>
         </div>
-
-        <aside>
-            <div class="sidebar-section">
-                <h4>Seller Info</h4>
-                <ul>
-                    <li>Name: John D.</li>
-                    <li>Member since: 2019</li>
-                    <li>Rating: ★★★★☆</li>
-                </ul>
-            </div>
-            <div class="sidebar-section">
-                <h4>Related Ads</h4>
-                <ul>
-                    <li>Grand Piano - £8000</li>
-                    <li>Yamaha Electric Keyboard - £120</li>
-                    <li>Full-Size Violin + Case - £150</li>
-                </ul>
-            </div>
-        </aside>
     </main>
 </div>
 

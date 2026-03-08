@@ -29,7 +29,7 @@ To acheive this we will break it down into 3 parts: evaluation of business needs
 
 The current Craigslist interface relies entirely on text-based navigation with no visual hierarchy, icons, or graphical signposting. PhD researcher Nihal Nayak (Harvard University) characterised the site as "out-of-fashion" with a steep learning curve (Nayak, 2019). Because so few modern websites use this style, new users must actively learn the interface rather than applying familiar web conventions — a direct violation of the usability principle of **consistency with external standards** (Nielsen, 1994).
 
-![Screenshot 1: Homepage layout](/Screenshots/1.png)
+![Screenshot 1: Homepage layout](./Screenshots/1.png)
 
 > **Description:** Screenshot of london.craigslist.org homepage showing text-only layout, lack of sectional dividers, and absence of visual hierarchy.
 
@@ -37,7 +37,7 @@ The current Craigslist interface relies entirely on text-based navigation with n
 
 The search box is positioned in the top-left corner beneath the page title. While visible, it contains no graphical button or icon to trigger a search. Users must know to press Enter/Return — an interaction pattern largely abandoned by modern web services. Competitor platforms eBay UK and Gumtree both use clearly labelled, graphically styled search buttons that align with established user expectations.
 
-![Screenshot 2: Search bar comparison](/Screenshots/2.png)
+![Screenshot 2: Search bar comparison](./Screenshots/2.png)
 
 > **Description:** Side-by-side comparison of Craigslist's search bar (no button) vs. eBay UK (prominent search buttons).
 
@@ -45,7 +45,7 @@ The search box is positioned in the top-left corner beneath the page title. Whil
 
 Craigslist does not implement responsive design patterns such as dropdown menus, collapsible navigation, or touch-optimised tap targets. A substantial and growing proportion of web traffic originates from mobile devices, particularly among younger demographics who prefer a mobile-first experience. The absence of responsive design means content overflows on small screens, elements fail to scale correctly even when browser zoom is applied, and touch targets are too small for reliable interaction.
 
-![Screenshot 3: Mobile viewport](/Screenshots/3.png)
+![Screenshot 3: Mobile viewport](./Screenshots/3.png)
 
 > **Description:** Annotated screenshot of Craigslist rendered on a mobile viewport, illustrating layout overflow and unscaled text elements.
 
@@ -66,7 +66,7 @@ The sites semantic landmark region has no deliniation between the topmost row, t
 | Accessible colour contrast | ✗            | ✓      | Partial |
 | Dropdown / hamburger menus | ✗            | ✓      | ✓      |
 
-![Screenshot 4: Ebay Dynamic Modals](/Screenshots/4.png)
+![Screenshot 4: Ebay Dynamic Modals](./Screenshots/4.png)
 
 > **Description:** Screenshot of eBay UK homepage showing icons, responsive grid layout, and popup navigation menus.
 
@@ -78,7 +78,7 @@ The site has a whole page dedicated to eBay's iconography and their own icon lib
 
 Unlike craigslist these icons are synonymous to the user have alternative text for screenreaders and are used across ebay apps, sites, pages, and services, and they are considered by ebay to be a **foundation** of their design. These icons and more can be found at [playbook.ebay.com/foundations/iconography/our-icons](https://playbook.ebay.com/foundations/iconography/our-icons)
 
-![eBay Playbook Iconography](/Screenshots/5.png)
+![eBay Playbook Iconography](./Screenshots/5.png)
 
 > **Description:** Screenshot of ebay UK Playbook page on iconography, demonstrating eBay's structured icon library used across their platform for intuitive category navigation.
 
@@ -260,7 +260,7 @@ The wireframes will be guided by the following standards and principles:
 
 ### 3.2 Page / Area 1 — Homepage
 
-![Homepage Wireframe](/wireframe_images/wireframe_1.png)
+![Homepage Wireframe](./wireframe_images/wireframe_1.png)
 
 **Design Notes:**
 
@@ -271,7 +271,7 @@ The wireframes will be guided by the following standards and principles:
 
 ### 3.3 Page / Area 2 — Search Results Page
 
-![Search Results Wireframe](/wireframe_images/wireframe_2.png)
+![Search Results Wireframe](./wireframe_images/wireframe_2.png)
 
 **Design Notes:**
 
@@ -281,20 +281,18 @@ The wireframes will be guided by the following standards and principles:
 
 ### 3.4 Page / Area 3 — Post a Listing Form
 
-> *[Insert wireframe image here]*
+![Post an Ad Wireframe](./wireframe_images/wireframe_3.png)
 
 **Design Notes:**
 
 * Large input fields with visible labels (not placeholder-only labels, which disappear on focus).
 * Auto-save functionality at defined intervals to prevent data loss for users with slower input speeds.
-* Validation errors displayed as inline text messages with icons, not colour alone.
-* Clear progress indication for multi-step form submission.
 
 ---
 
 ### 3.5 Page / Area 4 — Avoiding Scams
 
-![Avoiding Scams Wireframe](/wireframe_images/wireframe_4.png)
+![Avoiding Scams Wireframe](./wireframe_images/wireframe_4.png)
 
 **Design Notes:**
 
@@ -330,11 +328,11 @@ Semantic Elements - Key Regions where landmarked in nav
 
 ## 5. Contributors
 
-| Name        | Email               |
-| ------------- | --------------------- |
-| Kai Young   | ky25aaa@herts.ac.uk |
-| Will Cooper |                     |
-| Daniel      |                     |
+| Name         | Email                 |
+| -------------| --------------------- |
+| Kai Young    | ky25aaa@herts.ac.uk   |
+| Will Cooper  | wg25aac@herts.ac.uk   |
+| Daniel Zhang | dz25aaa@herts.ac.uk   |
 
 > *Update this table with actual emails. All Team Members have to have made commits to the repository*
 

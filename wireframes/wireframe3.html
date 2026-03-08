@@ -6,7 +6,6 @@
   <title>craiglist: Post an Ad</title>
   <link rel="stylesheet" href="wireframe.css">
   <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-  <script>scr="script.js"></script>
 </head>
 <body>
 
@@ -97,124 +96,79 @@
     <!-- CONTENT -->
     <main class="content">
 
-      <!-- POST AN ADD  -->
+      <!-- POST AN AD -->
       <div class="content-section">
         <div class="section-header">
           <h2>Post An Ad</h2>
-        </div class="section-header">
-
-        <!--dropwdown search-->
-        <h1 style="color:purple;">Type of Advert</h1>
-                <div class="options">
-          <button onclick="myFunction()" class="dropbtn">options</button>
-          <div id="myDropdown" class="dropdown-content">
-            <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
-            <a href="#job-offered">Job Offered</a>
-            <a href="#temp-job-offered">Temp Job Offered</a>
-            <a href="#resume-job-wanted">Resume / Job Wanted</a>
-            <a href="#housing-offered">Housing Offered</a>
-            <a href="#housing-wanted">Housing Wanted</a>
-            <a href="#for-sale-by-owner">For Sale by Owner</a>
-            <a href="#for-sale-by-dealer">For Sale by Dealer</a>
-            <a href="#wanted-by-owner">Wanted by Owner</a>
-            <a href="#wanted-by-dealer">Wanted by Dealer</a>
-            <a href="#service-offered">Service Offered</a>
-            <a href="#community">Community</a>
-            <a href="#event-class">Event / Class</a>
-
-
-          </div>
-          
-          <br><br><br>
-<!--name of seller-->
-<style>
-div.mycontainer {
-  width:100%;
-  overflow:auto;
-}
-div.mycontainer div {
-  width:33%;  
-  float:left;
-}
-</style>
-
-<div class="mycontainer">
-
-  <div>
-<form action="">
-  <h2 style="color:purple;">Surname</h2>
-  <input type="text" id="lname" name="lname" value="Doe"><br>
-  <input style="fill-opacity: purple;"type="submit" value="Submit">
-</form>
-  </div>
-  
-  <div>
-  <h2 style="color:purple;">First name</h2>
-  <input type="text" id="fname" name="fname" value="John"><br>
-</form>
-  </div>
-
-</div>
-
-</div>
-</form>
-
-  <h1 style="color:purple;">Upload photos<h1>
-    <div class="profile-picture">
-      <h1 class="upload-icon">
-        <i class="fa fa-plus fa-2x" aria-hidden="true"></i>
-      </h1>
-      <input
-        class="file-uploader"
-        type="file"
-        onchange="upload()"
-        accept="image/*"
-      />
-    </div>
-  
-</form>
-<!--selection answers-->
-<style>
-div.mycontainer {
-  width:100%;
-  overflow:auto;
-}
-div.mycontainer div {
-  width:33%;  
-  float:left;
-}
-</style>
-
-<div class="mycontainer">
-
-  <div>
-<label style="color: purple;" for="PropType">property type</label><br>
-<select name="PropType" id="PropType">
-  <option value="house">house</option>
-  <option value="flat">flat</option>
-  <option value="town house">town house</option>
-</select>
-  </div>
-  
-  <div>
-<span style="color: purple;">rent or sell</span>
-<input type="checkbox" name="rent or sell"checked />
-<input type="checkbox" name="rent or sell" />
-  </div>
-
-    <div>
-<form action="">
-  <h3 style="color:purple;">Price</h3>
-  <input type="text" id="Price" name="Price" value="Doe"><br>
-  <input type="submit" value="Submit">
-</form>
-  </div>
-</div>
-</div>
-
-
-    </div>
         </div>
+
+        <form class="post-ad-form" action="#">
+          <div class="post-ad-grid">
+            <div class="form-group ad-type-field">
+              <label for="adType">Type of advert</label>
+              <select id="adType" name="adType">
+                <option value="for-sale-owner">For Sale by Owner</option>
+                <option value="for-sale-dealer">For Sale by Dealer</option>
+                <option value="housing-offered">Housing Offered</option>
+                <option value="housing-wanted">Housing Wanted</option>
+                <option value="job-offered">Job Offered</option>
+                <option value="service-offered">Service Offered</option>
+                <option value="community">Community</option>
+                <option value="event-class">Event / Class</option>
+              </select>
+            </div>
+
+            <div class="form-group property-type-field">
+                <label for="propertyType">If a Property what type?</label>
+                <select id="propertyType" name="propertyType" disabled>
+                  <option value="" selected>Select property type</option>
+                  <option>House</option>
+                  <option>Flat</option>
+                  <option>Town house</option>
+                  <option>Studio</option>
+                  <option>N/A</option> 
+                </select>
+            </div>
+
+            <div class="form-group first-name-field">
+              <label for="firstName">First name</label>
+              <input type="text" id="firstName" name="firstName" placeholder="John">
+            </div>
+
+            <div class="form-group last-name-field">
+              <label for="lastName">Surname</label>
+              <input type="text" id="lastName" name="lastName" placeholder="Doe">
+            </div>
+
+            <div class="form-group form-span-2">
+              <label for="adTitle">Ad title</label>
+              <input type="text" id="adTitle" name="adTitle" placeholder="Bright 1-bed flat near Camden station">
+            </div>
+
+            <div class="form-group">
+              <label for="price">Price (£)</label>
+              <input type="text" id="price" name="price" placeholder="900">
+            </div>
+
+            <div class="form-group form-span-2">
+              <label for="description">Description</label>
+              <textarea id="description" name="description" placeholder="Add key details about your ad..."></textarea>
+            </div>
+          </div>
+
+          <div class="photo-upload-row">
+            <div class="photo-upload-title">Upload photos</div>
+            <div class="profile-picture">
+              <h1 class="upload-icon"><i class="fa fa-plus fa-2x" aria-hidden="true"></i></h1>
+              <input class="file-uploader" type="file" accept="image/*">
+            </div>
+          </div>
+
+          <div class="post-ad-actions">
+            <button type="submit" class="btn btn-primary">publish ad</button>
+            <button type="button" class="btn btn-secondary">save draft</button>
+          </div>
+        </form>
       </div>
 
     </main>
@@ -320,5 +274,21 @@ div.mycontainer div {
       </div>
     </div>
   </footer>
+
+  <script>
+    const adType = document.getElementById('adType');
+    const propertyType = document.getElementById('propertyType');
+
+    function syncPropertyFieldState() {
+      const isHousing = adType.value === 'housing-offered' || adType.value === 'housing-wanted';
+      propertyType.disabled = !isHousing;
+      if (!isHousing) {
+        propertyType.value = '';
+      }
+    }
+
+    adType.addEventListener('change', syncPropertyFieldState);
+    syncPropertyFieldState();
+  </script>
 </body>
 </html>
