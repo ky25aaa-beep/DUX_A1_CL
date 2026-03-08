@@ -360,7 +360,7 @@ The website already saves the inputted data so the `btn-secondary` is mostly for
       </div>
 ```
 
-For the upload photo function there is a blank empty photo icon that makes it intuitive to interact with the image to upload the photo which had the “file uploader” input function
+For the upload photo function there is a blank empty photo icon that makes it intuitive to interact with the image to upload the photo which had the `“file uploader”`
 ```html
           <div class="photo-upload-row">
             <div class="photo-upload-title">Upload photos</div>
@@ -381,7 +381,7 @@ CSS for the to make the input bars fit the section with the `grid` fuction by se
 }
 ```
 
-CSS for the Upload background image which controls the size and shadow of the bottom of the image to prevent it from blending into the pages white base background
+CSS for the Upload background image which controls the size and `shadow` of the bottom of the image to prevent it from blending into the pages white base background
 ```CSS
 .profile-picture {
   opacity: 0.75;
