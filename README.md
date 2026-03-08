@@ -21,7 +21,7 @@ Craigslist is a community-driven classifieds platform used for buying, selling, 
 
 The aim of this project is to investigate those deficiencies, justify the need for a redesigned website, and produce an improved design that addresses identified problems while remaining faithful to Craigslist's community-classifieds purpose.
 
-To acheive this we will break it down into 3 parts: evaluation of business needs, and identified issues; Target Audience, User Personas, Stories ; Design Wireframes, Evaluate improved accessibility and usability
+To achieve this we will break it down into 3 parts: evaluation of business needs, and identified issues; Target Audience, User Personas, Stories ; Design Wireframes, Evaluate improved accessibility and usability
 
 ### Business Needs and Identified Issues
 
@@ -53,18 +53,18 @@ Craigslist does not implement responsive design patterns such as dropdown menus,
 
 The site uses inconsistent semantic landmark regions, provides minimal colour contrast differentiation between content areas, and offers no ARIA attributes or skip-navigation links. This makes the site difficult or impossible to use for people relying on screen readers, keyboard navigation, or assistive technologies — a failure to meet WCAG 2.1 Level AA standards (W3C, 2018).
 
-The sites semantic landmark region has no deliniation between the topmost row, that selects the region, category allows access to posting and account information, and the search functions this means every time a screenreader or braile device goes over the header section they read both navigation information and site controls (region, category, post creation, and account information), instead of what should happen where navigation search and main are in three identifiable sections for those tools.
+The sites semantic landmark region has no delineation between the topmost row, that selects the region, category allows access to post creation and account information, and the search functions this means every time a screen reader or braille device goes over the header section they read both navigation information and site controls (region, category, post creation, and account information), instead of what should happen where navigation search and main are in three identifiable sections for those tools.
 
 #### 1.5 Competitive Analysis Summary
 
 | Feature                    | Craigslist UK | eBay UK | Gumtree |
-| ---------------------------- | --------------- | --------- | --------- |
-| Graphical search button    | ✗            | ✓      | ✓      |
-| Category icons             | ✗            | ✓      | ✓      |
-| Mobile responsive layout   | ✗            | ✓      | ✓      |
-| Visual section separation  | ✗            | ✓      | ✓      |
-| Accessible colour contrast | ✗            | ✓      | Partial |
-| Dropdown / hamburger menus | ✗            | ✓      | ✓      |
+|----------------------------|---------------|---------|---------|
+| Graphical search button    | ✗             | ✓       | ✓       |
+| Category icons             | ✗             | ✓       | ✓       |
+| Mobile responsive layout   | ✗             | ✓       | ✓       |
+| Visual section separation  | ✗             | ✓       | ✓       |
+| Accessible colour contrast | ✗             | ✓       | Partial |
+| Dropdown / hamburger menus | ✗             | ✓       | ✓       |
 
 ![Screenshot 4: Ebay Dynamic Modals](./Screenshots/4.png)
 
@@ -76,7 +76,7 @@ eBay hosts their own dedicated design documentation site called the **eBay Playb
 
 The site has a whole page dedicated to eBay's iconography and their own icon library. This library includes purpose-built icons covering the majority of their product categories — headphones for electronics, a car for automotive, footwear, a t-shirt for clothing, a lamp shade for home furnishings, a bed frame for furniture, boats for leisure, and many more.
 
-Unlike craigslist these icons are synonymous to the user have alternative text for screenreaders and are used across ebay apps, sites, pages, and services, and they are considered by ebay to be a **foundation** of their design. These icons and more can be found at [playbook.ebay.com/foundations/iconography/our-icons](https://playbook.ebay.com/foundations/iconography/our-icons)
+Unlike craigslist these icons are synonymous to the user have alternative text for screen-readers and are used across ebay apps, sites, pages, and services, and they are considered by ebay to be a **foundation** of their design. These icons and more can be found at [playbook.ebay.com/foundations/iconography/our-icons](https://playbook.ebay.com/foundations/iconography/our-icons)
 
 ![eBay Playbook Iconography](./Screenshots/5.png)
 
@@ -103,14 +103,14 @@ Craigslist UK serves a broad community of users across the UK who wish to buy, s
 * **First-time visitors** exploring online classifieds for the first time or new to Craigslist specifically.
 * **Returning visitors** who use the site periodically for specific needs (e.g., selling items every few months).
 * **Frequent visitors** who rely on the platform regularly for business or personal activity.
-* Additional segments include buyers, sellers, landlords, job seekers, and community members posting local events.
+* Additional segments include buyers, sellers, landlords, jobseekers, and community members posting local events.
 
 ---
 
 ### Persona 1 — Sarah (First-Time Visitor)
 
 | Attribute               | Detail                                                                                                                                   |
-| ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+|-------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
 | **Age**                 | 40                                                                                                                                       |
 | **Occupation**          | Carer                                                                                                                                    |
 | **Location**            | Hertfordshire                                                                                                                            |
@@ -122,8 +122,8 @@ Craigslist UK serves a broad community of users across the UK who wish to buy, s
 
 #### User Stories — Sarah
 
-| #  | User Story                                                                                                                                                                                     |
-| ---- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| #  | User Story                                                                                                                                                                                      |
+|----|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | S1 | As a **first-time visitor**, I want to **search for second-hand furniture using a visible search button**, so that **I can find relevant listings without needing to know keyboard shortcuts**. |
 | S2 | As a **user with dyslexia**, I want the **website to use clear, simple language with generous spacing and readable fonts**, so that **I can browse listings without cognitive overload**.       |
 | S3 | As a **mobile user with hand tremors**, I want **large, clearly labelled buttons and touch targets**, so that **I can navigate the site reliably on my smartphone**.                            |
@@ -155,7 +155,7 @@ Craigslist UK serves a broad community of users across the UK who wish to buy, s
 ### Persona 2 — Dexter (Returning Visitor)
 
 | Attribute               | Detail                                                                                                                               |
-| ------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+|-------------------------|--------------------------------------------------------------------------------------------------------------------------------------|
 | **Age**                 | 35                                                                                                                                   |
 | **Occupation**          | Graphic Designer                                                                                                                     |
 | **Location**            | London                                                                                                                               |
@@ -167,8 +167,8 @@ Craigslist UK serves a broad community of users across the UK who wish to buy, s
 
 #### User Stories — Dexter
 
-| #  | User Story                                                                                                                                                                                                                            |
-| ---- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| #  | User Story                                                                                                                                                                                                                             |
+|----|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | D1 | As a **returning visitor**, I want the **website to remember my preferred listing categories**, so that **I can get back to relevant content quickly without re-configuring my search each time**.                                     |
 | D2 | As a **keyboard user**, I want to **navigate the entire site without a mouse**, so that **I can use the platform comfortably despite limited hand dexterity**.                                                                         |
 | D3 | As a **user with deuteranopia**, I want **status indicators and important information to be conveyed through shape or text labels rather than colour alone**, so that **I do not miss critical information due to colour-coded cues**. |
@@ -200,7 +200,7 @@ Craigslist UK serves a broad community of users across the UK who wish to buy, s
 ### Persona 3 - Lana (Frequent Visitor)
 
 | Attribute               | Detail                                                                                                                                                                    |
-| ------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Age**                 | 22                                                                                                                                                                        |
 | **Occupation**          | Student                                                                                                                                                                   |
 | **Location**            | Hertfordshire                                                                                                                                                             |
@@ -212,8 +212,8 @@ Craigslist UK serves a broad community of users across the UK who wish to buy, s
 
 #### User Stories — Lana
 
-| #  | User Story                                                                                                                                                                                  |
-| ---- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| #  | User Story                                                                                                                                                                                   |
+|----|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | S1 | As a **frequent visitor**, I want to **filter my search results by category and location**, so that **I can quickly find relevant listing without being overwhelmed by irrelevant options**. |
 | S2 | As a **user with ADHD**, I want the **website to have clear visual hierarchy and concise descriptions**, so that **I can focus on the most important information without distractions**.     |
 | S3 | As a **user with visual sensitivity**, I want **the website to offer a dark mode or soft contrast option,**, so that **I can browse without experiencing discomfort**.                       |
@@ -233,7 +233,7 @@ Craigslist UK serves a broad community of users across the UK who wish to buy, s
 
 **S2 – Structured content and accessibility:**
 
-> *Given* Lana is on a listing page,, *when* she uses a screen reader *then* all listing details must be properly structured with clear and accessible HTML markup, so she can easily access the content.
+> *Given* Lana is on a listing page, *when* she uses a screen reader *then* all listing details must be properly structured with clear and accessible HTML markup, so she can easily access the content.
 
 **S3 – Search results accuracy:**
 
@@ -342,17 +342,17 @@ Including descriptive `alt` attributes ensures that users relying on screen read
 
 ### 4.1 Key Decisions, trade-offs and Successes
 
-The redesign process started with use critically assessing the exisiting craiglist UK site against modern design standards. This analysis npted some serioius deficiencies which extended across the entire site and few were isolated.
+The redesign process started with use critically assessing the existing Craigslist UK site against modern design standards. This analysis identified some serious deficiencies which extended across the entire site, with few being isolated.
 
-A central debate emerged amongst the team: how much could we get done for craiglist and how much of the original minimalistic design could we keep.Its sparesness was part of its identiuty, but it also created a steep learning curve (nayak, 2019). We resolved this by as and where we could maintaining the existing text based buttons, and selectables while also adding icons, this solved two issues for us maintaining that minimalistic approach, while also being adapted for screen readers there was no need to add alt text to our facebook icon as it was followed by facebook or our vehicles icon as it was also followed by the word Vehicles.
+A central debate emerged amongst the team: how much could we get done for Craigslist and how much of the original minimalistic design could we keep.Its sparseness was part of its identity, but it also created a steep learning curve (Nayak, 2019). We resolved this by maintaining the existing text based buttons where possible, and selectables while also adding icons, this solved two issues for us maintaining that minimalistic approach, while also being adapted for screen readers there was no need to add alt text to our facebook icon as it was followed by facebook or our vehicles icon as it was also followed by the word Vehicles.
 
 ### 4.2 Accessibility as a Foundation
 
-Accessibility was not an afterthought of our project unlike the original site, We mapped WCAG 21 Level AA sucess criteria to every one of ourour design decisions:
+Accessibility was not an afterthought of our project unlike the original site, We mapped WCAG 21 Level AA success criteria to every one of our design decisions:
 
 Each icon/symbol/text maintained acceptable levels of contrast (4.5:1), verified by a check using [webaim contrast checker](https://webaim.org/resources/contrastchecker/), we maintained keyboard navigation by utilising keyboard compatible elements and avoiding dynamic popups where possible.
 
-Semantic Elements - Key regions were landmarked in the navigation and page structure to improve compatibility with assistive technologies. The redesign separates the page into clearly defined `<header>`, `<nav>`, `<main>`, `<aside>`, and `<footer>` sections so that screen readers can interpret the structure of the page correctly. This directly addresses one of the major accessibility problems identified in the original Craigslist site where navigation, search, and account controls were grouped together without clear separation.
+Semantic Elements - Landmarks were added to key regions of the navigation and page structure to improve compatibility with assistive technologies. The redesign separates the page into clearly defined `<header>`, `<nav>`, `<main>`, `<aside>`, and `<footer>` sections so that screen readers can interpret the structure of the page correctly. This directly addresses one of the major accessibility problems identified in the original Craigslist site where navigation, search, and account controls were grouped together without clear separation.
 
 By structuring the layout using semantic landmarks, users relying on screen readers or braille displays can skip between major areas of the page instead of being forced to read through the entire header each time they load a new page. This significantly improves efficiency and aligns the design with WCAG 2.1 guidelines relating to navigable page structure.
 
@@ -360,17 +360,17 @@ Another accessibility consideration was avoiding the use of colour alone to comm
 
 ### 4.3 Team Collaboration and Workflow
 
-The design process was collaborative between all three team members, with responsibilities shared across research, wireframing, and documentation. Initial analysis of the Craigslist interface was conducted collectively, with each team member identifying usability and accessibility issues through heuristic evaluation and comparison with competitor platforms such as eBay and Gumtree.
+The design process was collaborative between all three team members, with responsibilities shared across research, wireframes, and documentation. Initial analysis of the Craigslist interface was conducted collectively, with each team member identifying usability and accessibility issues through heuristic evaluation and comparison with competitor platforms such as eBay and Gumtree.
 
 Once the key issues had been identified, the team began developing wireframes to address those problems while still maintaining Craigslist's core identity as a simple community classifieds platform. Feedback was exchanged throughout the process, allowing designs to be refined and improved iteratively.
 
 Using a shared repository allowed the team to track contributions and maintain version control of the project documentation and design files. This also ensured transparency in individual contributions and made it easier to combine different sections of the assignment into a cohesive final report.
 
-The shared repository was only instituted when neccessary, prior to this a shared drive was used when forming the ideas, and analysing the competitors. It was the responsibility of Kai Young to transfer this over and thus is why other team members havent collaborated within those sections on the logs. 
+The shared repository was only instituted when necessary, prior to this a shared drive was used when forming the ideas, and analysing the competitors. It was the responsibility of Kai Young to transfer this over and thus is why other team members haven't collaborated within those sections on the logs. 
 
 ### 4.4 Overall Reflection
 
-Overall, the redesign process demonstrated to us how, legacy platforms can benefit from modern usability practices and how very popular coners on the internet are still years behind in levels of design and usability especially when it comes to their accessibility. By introducing clearer visual heirachy, improved navigaion and a full interface rredesign. We were able to transform craiglist from a site only compatible with basic support features of accessiblity tools like screen readers, braille etc, to one supported by loads of complex accessibility tools, but also for individuals with impairments that don't have accessibility devices our surface level website is more accessible with greater contrast etc.
+Overall, the redesign process demonstrated to us how, legacy platforms can benefit from modern usability practices and how very popular coners on the internet are still years behind in levels of design and usability especially when it comes to their accessibility. By introducing clearer visual hierarchy, improved navigation and a full interface redesign. We were able to transform Craigslist from a site only compatible with basic support features of accessibility tools like screen readers, braille etc., to one supported by loads of complex accessibility tools, but also for individuals with impairments that don't have accessibility devices our surface level website is more accessible with greater contrast etc.
 
 Through this project the team gained a deeper understanding of the relationship between usability, accessibility, and user-centred design, and how these principles can be applied to improve real-world digital platforms.
 
@@ -378,11 +378,11 @@ Through this project the team gained a deeper understanding of the relationship 
 
 ## 5. Contributors
 
-| Name         | Email                 |
-| -------------| --------------------- |
-| Kai Young    | ky25aaa@herts.ac.uk   |
-| Will Cooper  | wg25aac@herts.ac.uk   |
-| Daniel Zhang | dz25aaa@herts.ac.uk   |
+| Name         | Email               |
+|--------------|---------------------|
+| Kai Young    | ky25aaa@herts.ac.uk |
+| Will Cooper  | wg25aac@herts.ac.uk |
+| Daniel Zhang | dz25aaa@herts.ac.uk |
 
 
 ---
