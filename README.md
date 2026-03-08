@@ -214,9 +214,9 @@ Craigslist UK serves a broad community of users across the UK who wish to buy, s
 
 | #  | User Story                                                                                                                                                                                   |
 |----|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| S1 | As a **frequent visitor**, I want to **filter my search results by category and location**, so that **I can quickly find relevant listing without being overwhelmed by irrelevant options**. |
-| S2 | As a **user with ADHD**, I want the **website to have clear visual hierarchy and concise descriptions**, so that **I can focus on the most important information without distractions**.     |
-| S3 | As a **user with visual sensitivity**, I want **the website to offer a dark mode or soft contrast option,**, so that **I can browse without experiencing discomfort**.                       |
+| L1 | As a **frequent visitor**, I want to **filter my search results by category and location**, so that **I can quickly find relevant listing without being overwhelmed by irrelevant options**. |
+| L2 | As a **user with ADHD**, I want the **website to have clear visual hierarchy and concise descriptions**, so that **I can focus on the most important information without distractions**.     |
+| L3 | As a **user with visual sensitivity**, I want **the website to offer a dark mode or soft contrast option,**, so that **I can browse without experiencing discomfort**.                       |
 
 #### Tasks — Lana
 
@@ -227,15 +227,15 @@ Craigslist UK serves a broad community of users across the UK who wish to buy, s
 
 #### Acceptance Criteria — Lana
 
-**S1 – Filtering by category and location:**
+**L1 – Filtering by category and location:**
 
 > *Given* Lana is on search results page, *when* she applies a filter for location and selects a category, *then* the page should refresh and show listings that match those filters.
 
-**S2 – Structured content and accessibility:**
+**L2 – Structured content and accessibility:**
 
 > *Given* Lana is on a listing page, *when* she uses a screen reader *then* all listing details must be properly structured with clear and accessible HTML markup, so she can easily access the content.
 
-**S3 – Search results accuracy:**
+**L3 – Search results accuracy:**
 
 > *Given* Lana has entered a search term into the search bar, *when* the search results are displayed, *then* the listings shown should match the search term and be sorted by relevance, location adn price.
 
