@@ -320,10 +320,27 @@ Accessibility was not an afterthought of our project unlike the original site, W
 
 Each icon/symbol/text maintained acceptable levels of contrast (4.5:1), verified by a check using [webaim contrast checker](https://webaim.org/resources/contrastchecker/), we maintained keyboard navigation by utilising keyboard compatible elements and avoiding dynamic popups where possible.
 
-Semantic Elements - Key Regions where landmarked in nav 
+Semantic Elements - Key regions were landmarked in the navigation and page structure to improve compatibility with assistive technologies. The redesign separates the page into clearly defined <header>, <nav>, <main>, <aside>, and <footer> sections so that screen readers can interpret the structure of the page correctly. This directly addresses one of the major accessibility problems identified in the original Craigslist site where navigation, search, and account controls were grouped together without clear separation.
 
+By structuring the layout using semantic landmarks, users relying on screen readers or braille displays can skip between major areas of the page instead of being forced to read through the entire header each time they load a new page. This significantly improves efficiency and aligns the design with WCAG 2.1 guidelines relating to navigable page structure.
 
+Another accessibility consideration was avoiding the use of colour alone to communicate important information. For example, validation errors in forms are supported with icons and descriptive text labels rather than simply changing the colour of an input field. This ensures that users with colour vision deficiencies such as deuteranopia are still able to understand when an error has occurred and how to correct it.
 
+### 4.3 Team Collaboration and Workflow
+
+The design process was collaborative between all three team members, with responsibilities shared across research, wireframing, and documentation. Initial analysis of the Craigslist interface was conducted collectively, with each team member identifying usability and accessibility issues through heuristic evaluation and comparison with competitor platforms such as eBay and Gumtree.
+
+Once the key issues had been identified, the team began developing wireframes to address those problems while still maintaining Craigslist’s core identity as a simple community classifieds platform. Feedback was exchanged throughout the process, allowing designs to be refined and improved iteratively.
+
+Using a shared repository allowed the team to track contributions and maintain version control of the project documentation and design files. This also ensured transparency in individual contributions and made it easier to combine different sections of the assignment into a cohesive final report.
+
+The shared repository was only instituted when neccessary, prior to this a shared drive was used when forming the ideas, and analysing the competitors. It was the responsibility of Kai Young to transfer this over and thus is why other team members havent collaborated within those sections on the logs. 
+
+### 4.4 Overall Reflection
+
+Overall, the redesign process demonstrated to us how, legacy platforms can benefit from modern usability practices and how very popular coners on the internet are still years behind in levels of design and usability especially when it comes to their accessibility. By introducing clearer visual heirachy, improved navigaion and a full interface rredesign. We were able to transform craiglist from a site only compatible with basic support features of accessiblity tools like screen readers, braille etc, to one supported by loads of complex accessibility tools, but also for individuals with impairments that don't have accessibility devices our surface level website is more accessible with greater contrast etc.
+
+Through this project the team gained a deeper understanding of the relationship between usability, accessibility, and user-centred design, and how these principles can be applied to improve real-world digital platforms.
 ---
 
 ## 5. Contributors
