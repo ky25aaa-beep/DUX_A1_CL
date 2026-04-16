@@ -1,0 +1,76 @@
+{
+  "featured_posts": [
+    {
+      "id": 1,
+      "category": "For Sale - Electronics",
+      "title": "iPhone 14 Pro (128GB) - Excellent Condition",
+      "price": "£650",
+      "location": "London, England",
+      "description": "Selling my iPhone 14 Pro in Space Black, 128GB. The phone is in excellent condition with no scratches on the screen or back. Always kept in a case and used with a screen protector. Battery health at 91%. Comes with original box and charging cable. Reason for sale: upgraded to a newer model.",
+      "image": "https://via.placeholder.com/400x300?text=iPhone+14+Pro"
+    },
+    {
+      "id": 2,
+      "category": "Housing - Rentals",
+      "title": "1-Bedroom Flat in City Centre",
+      "price": "£1,200/month",
+      "location": "Manchester, England",
+      "description": "Modern 1-bedroom flat available in Manchester city centre. Open-plan kitchen and living area, fully furnished, with large windows offering plenty of natural light. Close to public transport, shops, and restaurants. Ideal for young professionals. Minimum 6-month lease required.",
+      "image": "https://via.placeholder.com/400x300?text=1+Bed+Flat"
+    },
+    {
+      "id": 3,
+      "category": "Jobs",
+      "title": "Part-Time Barista Needed",
+      "price": "£11/hour",
+      "location": "Bristol, England",
+      "description": "Independent coffee shop in Bristol is looking for a friendly and reliable part-time barista. Previous experience preferred but not required. Must be available on weekends. Duties include preparing drinks, handling customers, and maintaining cleanliness. Staff discounts included.",
+      "image": "https://via.placeholder.com/400x300?text=Barista+Job"
+    },
+    {
+      "id": 4,
+      "category": "For Sale - Furniture",
+      "title": "Solid Oak Dining Table with 4 Chairs",
+      "price": "£300",
+      "location": "Leeds, England",
+      "description": "Beautiful solid oak dining table with four matching chairs. Lightly used and in great condition. Perfect for small families or apartments. Table dimensions: 140cm x 80cm. Collection only from Leeds.",
+      "image": "https://via.placeholder.com/400x300?text=Dining+Table"
+    },
+    {
+      "id": 5,
+      "category": "Vehicles",
+      "title": "2015 Ford Fiesta - Low Mileage",
+      "price": "£5,200",
+      "location": "Birmingham, England",
+      "description": "2015 Ford Fiesta in great condition with only 48,000 miles. Manual transmission, petrol engine, full service history, and MOT valid until next year. Recently serviced with new tyres fitted. Ideal first car, cheap to insure and run.",
+      "image": "https://via.placeholder.com/400x300?text=Ford+Fiesta"
+    },
+    {
+      "id": 6,
+      "category": "Services",
+      "title": "Professional Home Cleaning Service",
+      "price": "£20/hour",
+      "location": "Glasgow, Scotland",
+      "description": "Reliable and experienced cleaner offering home cleaning services in Glasgow. Services include regular cleaning, deep cleaning, and end-of-tenancy cleaning. All cleaning supplies provided. Flexible scheduling and competitive rates.",
+      "image": "https://via.placeholder.com/400x300?text=Cleaning+Service"
+    },
+    {
+      "id": 7,
+      "category": "For Sale - Fashion",
+      "title": "Men’s Leather Jacket (Medium)",
+      "price": "£80",
+      "location": "Liverpool, England",
+      "description": "Stylish men’s black leather jacket, size medium. Worn only a few times and still in excellent condition. खरीदी from a high street brand last year. Perfect for autumn and winter wear.",
+      "image": "https://via.placeholder.com/400x300?text=Leather+Jacket"
+    },
+    {
+      "id": 8,
+      "category": "Pets",
+      "title": "Golden Retriever Puppies - Ready Soon",
+      "price": "£900",
+      "location": "Edinburgh, Scotland",
+      "description": "Adorable Golden Retriever puppies looking for loving homes. Born 6 weeks ago, will be ready to leave at 8 weeks. Vaccinated, microchipped, and health-checked. Both parents can be seen. Ideal family pets.",
+      "image": "https://via.placeholder.com/400x300?text=Golden+Retriever+Puppies"
+    }
+  ]
+}
